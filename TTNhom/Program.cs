@@ -17,6 +17,7 @@ namespace TTNhom
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormLogin());
+            //tung test push git
         }
     }
 }
