@@ -1,0 +1,12 @@
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\bin\Debug\TTNhom.exe.config
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\bin\Debug\TTNhom.exe
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\bin\Debug\TTNhom.pdb
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.csprojAssemblyReference.cache
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.Properties.Resources.resources
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.csproj.GenerateResource.cache
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.csproj.CoreCompileInputs.cache
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.exe
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.pdb
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.FormLogin.resources
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.MainForm.resources
+F:\Project\Project_Visual_Studio\TTnhom\TTNhom\TTNhom\obj\Debug\TTNhom.SearchFrom.resources
