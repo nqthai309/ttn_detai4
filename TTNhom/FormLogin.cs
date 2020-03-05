@@ -13,10 +13,11 @@ namespace TTNhom
 {
     public partial class FormLogin : Form
     {
+        
         DBAccess dbAccess = new DBAccess();
         DataTable dt = new DataTable();
 
-      //  private static string strConn = "Data Source=MAYTINH-JCRJIC4;Initial Catalog=TTCSDL;Integrated Security=True";
+        //private static string strConn = "Data Source=MAYTINH-JCRJIC4;Initial Catalog=TTCSDL;Integrated Security=True";
         private static SqlConnection conn = new SqlConnection(DBAccess.strConn);
         private static SqlDataAdapter adt = new SqlDataAdapter();
         private static SqlCommand cmd = new SqlCommand();

@@ -13,10 +13,12 @@ namespace TTNhom
 {
     public partial class MainForm : Form
     {
+        List<Panel> listPanel = new List<Panel>();
+
         DBAccess access = new DBAccess();
         DataTable table;
 
-       // private static string strConn = "Data Source=MAYTINH-JCRJIC4;Initial Catalog=TTCSDL;Integrated Security=True";
+        //private static string strConn = "Data Source=MAYTINH-JCRJIC4;Initial Catalog=TTCSDL;Integrated Security=True";
         private static SqlConnection conn = new SqlConnection(DBAccess.strConn);
         private static SqlDataAdapter adt = new SqlDataAdapter();
         private static SqlCommand cmd = new SqlCommand();
@@ -48,10 +50,11 @@ namespace TTNhom
 
         private void init()
         {
-            panelThemHangHoa.Show();
-            panelXuatHH.Hide();
-            panelTimKiem.Hide();
-            tabControl1.Hide();
+            
+
+           // listPanel[2].Visible = true;
+            
+            
             btnNhanVienQuanLy.Enabled = false;
 
             txtHoTen.Text = FormLogin.ten;
@@ -109,41 +112,29 @@ namespace TTNhom
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            panelThemHangHoa.Show();
-            panelXuatHH.Hide();
-            panelTimKiem.Hide();
-            tabControl1.Hide();
+            tabControl1.SelectTab(2);
         }
 
         private void BtnTraHangHoa_Click(object sender, EventArgs e)
         {
-            panelXuatHH.Show();
-            panelThemHangHoa.Hide();
-            panelTimKiem.Hide();
-            tabControl1.Hide();
+            tabControl1.SelectTab(1);
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            tabControl1.SelectTab(3);
+            table = new DataTable();
+            GetData("SELECT * FROM MatHang_View", dataGridView1, table);
 
-            //panelTimKiem.Hide();
-            //panelThemHangHoa.Hide();
-            //panelXuatHH.Hide();
-            //string keySearch = txtTimKiem.Text.Trim();
-            //table = new DataTable();
-            //access.getDataTimKiem(keySearch, dataGridView1, table);
 
-            SearchFrom s = new SearchFrom();
-            s.Show();
+            //SearchFrom s = new SearchFrom();
+            //s.Show();
 
         }
 
         private void BtnNhanVienQuanLy_Click(object sender, EventArgs e)
         {
-            tabControl1.Show();
-            panelThemHangHoa.Hide();
-            panelXuatHH.Hide();
-
+            tabControl1.SelectTab(0);
             table = new DataTable();
             GetData("select * from NhanVien", gridView2, table);
 
@@ -234,6 +225,37 @@ namespace TTNhom
         {
             this.Hide();
             FormLogin f = new FormLogin();
+            f.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(2);
+        }
+
+        private void BtnThongKe_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(4);
+        }
+
+        private void BtnTimKiem_Click(object sender, EventArgs e)
+        {
+            table = new DataTable();
+            string key = txtTimKiem.Text.Trim();
+            if (key.Equals(""))
+            {
+                GetData("SELECT * FROM MatHang_View", dataGridView1, table);
+            }
+            else
+            {
+                string query = "SELECT * FROM MatHang_View WHERE TenMatHang LIKE N'%" + key + "%'";
+                GetData(query, dataGridView1, table);
+            }
+        }
+
+        private void PictureBox6_Click(object sender, EventArgs e)
+        {
+            FromAddLoaiHang f = new FromAddLoaiHang();
             f.Show();
         }
     }
