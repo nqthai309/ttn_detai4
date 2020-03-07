@@ -22,3 +22,15 @@ F:\Project\Test\TTNhom\TTNhom\obj\Debug\TTNhom.csproj.CoreCompileInputs.cache
 F:\Project\Test\TTNhom\TTNhom\obj\Debug\TTNhom.exe
 F:\Project\Test\TTNhom\TTNhom\obj\Debug\TTNhom.pdb
 F:\Project\Test\TTNhom\TTNhom\obj\Debug\TTNhom.FromAddLoaiHang.resources
+F:\TTN\TTNhom\bin\Debug\TTNhom.exe.config
+F:\TTN\TTNhom\bin\Debug\TTNhom.exe
+F:\TTN\TTNhom\bin\Debug\TTNhom.pdb
+F:\TTN\TTNhom\obj\Debug\TTNhom.csprojAssemblyReference.cache
+F:\TTN\TTNhom\obj\Debug\TTNhom.FormLogin.resources
+F:\TTN\TTNhom\obj\Debug\TTNhom.FromAddLoaiHang.resources
+F:\TTN\TTNhom\obj\Debug\TTNhom.MainForm.resources
+F:\TTN\TTNhom\obj\Debug\TTNhom.Properties.Resources.resources
+F:\TTN\TTNhom\obj\Debug\TTNhom.csproj.GenerateResource.cache
+F:\TTN\TTNhom\obj\Debug\TTNhom.csproj.CoreCompileInputs.cache
+F:\TTN\TTNhom\obj\Debug\TTNhom.exe
+F:\TTN\TTNhom\obj\Debug\TTNhom.pdb

@@ -55,9 +55,9 @@
             this.txtSoDienThoai = new System.Windows.Forms.Label();
             this.txtNVQL = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
-            this.btnLogOut = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabQLNV = new System.Windows.Forms.TabPage();
             this.btnXoaQLNV = new System.Windows.Forms.Button();
@@ -403,6 +403,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông Tin User";
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLogOut.Location = new System.Drawing.Point(17, 163);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(175, 48);
+            this.btnLogOut.TabIndex = 9;
+            this.btnLogOut.Text = "LOG OUT!!";
+            this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label24);
@@ -421,17 +432,6 @@
             this.label24.Size = new System.Drawing.Size(399, 18);
             this.label24.TabIndex = 0;
             this.label24.Text = "Welcom To Warehouse Management Application ^^!";
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLogOut.Location = new System.Drawing.Point(17, 163);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(175, 48);
-            this.btnLogOut.TabIndex = 9;
-            this.btnLogOut.Text = "LOG OUT!!";
-            this.btnLogOut.UseVisualStyleBackColor = false;
-            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // tabControl1
             // 
@@ -697,6 +697,7 @@
             this.btnSearchQLNV.TabIndex = 44;
             this.btnSearchQLNV.Text = "Search";
             this.btnSearchQLNV.UseVisualStyleBackColor = true;
+            this.btnSearchQLNV.Click += new System.EventHandler(this.BtnSearchQLNV_Click);
             // 
             // txtSearchQLNV
             // 
