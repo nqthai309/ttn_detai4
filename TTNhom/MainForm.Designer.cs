@@ -55,9 +55,9 @@
             this.txtSoDienThoai = new System.Windows.Forms.Label();
             this.txtNVQL = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
-            this.btnLogOut = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabQLNV = new System.Windows.Forms.TabPage();
             this.btnXoaQLNV = new System.Windows.Forms.Button();
@@ -109,7 +109,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabThongKe = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabHangHoa = new System.Windows.Forms.TabPage();
+            this.tabNhapXuat = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -126,6 +129,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabThongKe.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -134,7 +139,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(950, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 498);
+            this.panel1.Size = new System.Drawing.Size(5, 603);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -152,14 +157,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 493);
+            this.panel3.Size = new System.Drawing.Size(5, 598);
             this.panel3.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(5, 493);
+            this.panel4.Location = new System.Drawing.Point(5, 598);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(945, 5);
             this.panel4.TabIndex = 0;
@@ -403,12 +408,23 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông Tin User";
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLogOut.Location = new System.Drawing.Point(17, 163);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(175, 48);
+            this.btnLogOut.TabIndex = 9;
+            this.btnLogOut.Text = "LOG OUT!!";
+            this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label24);
             this.panel5.Location = new System.Drawing.Point(218, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(732, 33);
+            this.panel5.Size = new System.Drawing.Size(729, 30);
             this.panel5.TabIndex = 68;
             // 
             // label24
@@ -422,24 +438,13 @@
             this.label24.TabIndex = 0;
             this.label24.Text = "Welcom To Warehouse Management Application ^^!";
             // 
-            // btnLogOut
-            // 
-            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLogOut.Location = new System.Drawing.Point(17, 163);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(175, 48);
-            this.btnLogOut.TabIndex = 9;
-            this.btnLogOut.Text = "LOG OUT!!";
-            this.btnLogOut.UseVisualStyleBackColor = false;
-            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabQLNV);
             this.tabControl1.Controls.Add(this.tabTraHang);
             this.tabControl1.Controls.Add(this.tabThemHang);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabThongKe);
             this.tabControl1.Location = new System.Drawing.Point(218, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -570,7 +575,7 @@
             // 
             // txtGioiTinhNVQL
             // 
-            this.txtGioiTinhNVQL.Location = new System.Drawing.Point(98, 303);
+            this.txtGioiTinhNVQL.Location = new System.Drawing.Point(98, 313);
             this.txtGioiTinhNVQL.Name = "txtGioiTinhNVQL";
             this.txtGioiTinhNVQL.Size = new System.Drawing.Size(159, 20);
             this.txtGioiTinhNVQL.TabIndex = 56;
@@ -963,22 +968,53 @@
             this.txtTimKiem.Size = new System.Drawing.Size(226, 23);
             this.txtTimKiem.TabIndex = 3;
             // 
-            // tabPage1
+            // tabThongKe
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(724, 448);
-            this.tabPage1.TabIndex = 4;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabThongKe.Controls.Add(this.tabControl2);
+            this.tabThongKe.Location = new System.Drawing.Point(4, 22);
+            this.tabThongKe.Name = "tabThongKe";
+            this.tabThongKe.Padding = new System.Windows.Forms.Padding(3);
+            this.tabThongKe.Size = new System.Drawing.Size(724, 448);
+            this.tabThongKe.TabIndex = 4;
+            this.tabThongKe.Text = "Thống Kê";
+            this.tabThongKe.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabHangHoa);
+            this.tabControl2.Controls.Add(this.tabNhapXuat);
+            this.tabControl2.Location = new System.Drawing.Point(-4, 6);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(722, 442);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // tabHangHoa
+            // 
+            this.tabHangHoa.Location = new System.Drawing.Point(4, 22);
+            this.tabHangHoa.Name = "tabHangHoa";
+            this.tabHangHoa.Padding = new System.Windows.Forms.Padding(3);
+            this.tabHangHoa.Size = new System.Drawing.Size(714, 416);
+            this.tabHangHoa.TabIndex = 0;
+            this.tabHangHoa.Text = "Hàng Hóa";
+            this.tabHangHoa.UseVisualStyleBackColor = true;
+            // 
+            // tabNhapXuat
+            // 
+            this.tabNhapXuat.Location = new System.Drawing.Point(4, 22);
+            this.tabNhapXuat.Name = "tabNhapXuat";
+            this.tabNhapXuat.Padding = new System.Windows.Forms.Padding(3);
+            this.tabNhapXuat.Size = new System.Drawing.Size(714, 416);
+            this.tabNhapXuat.TabIndex = 1;
+            this.tabNhapXuat.Text = "Lưu lượng Nhập - Xuất";
+            this.tabNhapXuat.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(955, 498);
+            this.ClientSize = new System.Drawing.Size(955, 603);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox3);
@@ -1014,6 +1050,8 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabThongKe.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1048,6 +1086,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TabPage tabThongKe;
         private System.Windows.Forms.TabPage tabQLNV;
         private System.Windows.Forms.Button btnXoaQLNV;
         private System.Windows.Forms.Button btnSuaQLNV;
@@ -1085,6 +1126,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TabPage tabThemHang;
+        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
@@ -1094,12 +1136,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabHangHoa;
+        private System.Windows.Forms.TabPage tabNhapXuat;
     }
 }

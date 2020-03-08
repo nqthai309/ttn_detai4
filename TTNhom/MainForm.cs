@@ -233,9 +233,10 @@ namespace TTNhom
             tabControl1.SelectTab(2);
         }
 
-        private void BtnThongKe_Click(object sender, EventArgs e)
+        private void BtnThongKe_Click(object sender, EventArgs e) //***pvh//
         {
             tabControl1.SelectTab(4);
+
         }
 
         private void BtnTimKiem_Click(object sender, EventArgs e)
@@ -258,5 +259,7 @@ namespace TTNhom
             FromAddLoaiHang f = new FromAddLoaiHang();
             f.Show();
         }
+
+        
     }
 }
