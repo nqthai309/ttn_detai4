@@ -233,9 +233,11 @@ namespace TTNhom
             tabControl1.SelectTab(2);
         }
 
-        private void BtnThongKe_Click(object sender, EventArgs e)
+        private void BtnThongKe_Click(object sender, EventArgs e)//**pvh**//
         {
             tabControl1.SelectTab(4);
+            table = new DataTable();
+            GetData("SELECT * FROM ThongKe_View", dataGridViewHH, table);
         }
 
         private void BtnTimKiem_Click(object sender, EventArgs e)
