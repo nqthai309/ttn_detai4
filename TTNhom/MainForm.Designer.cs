@@ -109,7 +109,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabThongKe = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabHangHoa = new System.Windows.Forms.TabPage();
+            this.tabNhapXuat = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -126,6 +129,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabThongKe.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -439,7 +444,7 @@
             this.tabControl1.Controls.Add(this.tabTraHang);
             this.tabControl1.Controls.Add(this.tabThemHang);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabThongKe);
             this.tabControl1.Location = new System.Drawing.Point(218, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -964,15 +969,46 @@
             this.txtTimKiem.Size = new System.Drawing.Size(226, 23);
             this.txtTimKiem.TabIndex = 3;
             // 
-            // tabPage1
+            // tabThongKe
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(724, 448);
-            this.tabPage1.TabIndex = 4;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabThongKe.Controls.Add(this.tabControl2);
+            this.tabThongKe.Location = new System.Drawing.Point(4, 22);
+            this.tabThongKe.Name = "tabThongKe";
+            this.tabThongKe.Padding = new System.Windows.Forms.Padding(3);
+            this.tabThongKe.Size = new System.Drawing.Size(724, 448);
+            this.tabThongKe.TabIndex = 4;
+            this.tabThongKe.Text = "Thống Kê";
+            this.tabThongKe.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabHangHoa);
+            this.tabControl2.Controls.Add(this.tabNhapXuat);
+            this.tabControl2.Location = new System.Drawing.Point(7, 7);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(711, 435);
+            this.tabControl2.TabIndex = 0;
+            // 
+            // tabHangHoa
+            // 
+            this.tabHangHoa.Location = new System.Drawing.Point(4, 22);
+            this.tabHangHoa.Name = "tabHangHoa";
+            this.tabHangHoa.Padding = new System.Windows.Forms.Padding(3);
+            this.tabHangHoa.Size = new System.Drawing.Size(703, 409);
+            this.tabHangHoa.TabIndex = 0;
+            this.tabHangHoa.Text = "Hàng Hóa";
+            this.tabHangHoa.UseVisualStyleBackColor = true;
+            // 
+            // tabNhapXuat
+            // 
+            this.tabNhapXuat.Location = new System.Drawing.Point(4, 22);
+            this.tabNhapXuat.Name = "tabNhapXuat";
+            this.tabNhapXuat.Padding = new System.Windows.Forms.Padding(3);
+            this.tabNhapXuat.Size = new System.Drawing.Size(703, 409);
+            this.tabNhapXuat.TabIndex = 1;
+            this.tabNhapXuat.Text = "Lưu lượng Nhập Xuất";
+            this.tabNhapXuat.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -1015,6 +1051,8 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabThongKe.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1101,6 +1139,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabThongKe;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabHangHoa;
+        private System.Windows.Forms.TabPage tabNhapXuat;
     }
 }
