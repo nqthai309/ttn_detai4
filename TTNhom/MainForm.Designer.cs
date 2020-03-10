@@ -113,6 +113,7 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabHangHoa = new System.Windows.Forms.TabPage();
             this.tabNhapXuat = new System.Windows.Forms.TabPage();
+            this.dataGridViewHH = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -131,6 +132,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabThongKe.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabHangHoa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHH)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -422,9 +425,9 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.label24);
-            this.panel5.Location = new System.Drawing.Point(218, 5);
+            this.panel5.Location = new System.Drawing.Point(527, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(732, 33);
+            this.panel5.Size = new System.Drawing.Size(423, 33);
             this.panel5.TabIndex = 68;
             // 
             // label24
@@ -992,6 +995,7 @@
             // 
             // tabHangHoa
             // 
+            this.tabHangHoa.Controls.Add(this.dataGridViewHH);
             this.tabHangHoa.Location = new System.Drawing.Point(4, 22);
             this.tabHangHoa.Name = "tabHangHoa";
             this.tabHangHoa.Padding = new System.Windows.Forms.Padding(3);
@@ -1009,6 +1013,14 @@
             this.tabNhapXuat.TabIndex = 1;
             this.tabNhapXuat.Text = "Lưu lượng Nhập Xuất";
             this.tabNhapXuat.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewHH
+            // 
+            this.dataGridViewHH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHH.Location = new System.Drawing.Point(0, 3);
+            this.dataGridViewHH.Name = "dataGridViewHH";
+            this.dataGridViewHH.Size = new System.Drawing.Size(700, 240);
+            this.dataGridViewHH.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -1053,6 +1065,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabThongKe.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
+            this.tabHangHoa.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHH)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1143,5 +1157,6 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabHangHoa;
         private System.Windows.Forms.TabPage tabNhapXuat;
+        private System.Windows.Forms.DataGridView dataGridViewHH;
     }
 }
