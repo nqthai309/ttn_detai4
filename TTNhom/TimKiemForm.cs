@@ -81,6 +81,12 @@ namespace TTNhom
                 case ("Nhà Cung Cấp"):
                         GetData("SELECT * FROM NhaCungCap", dataGridView1, table);
                     break;
+                case ("Phiếu Nhập"):
+                        GetData("SELECT * FROM PhieuNhap_View", dataGridView1, table);
+                    break;
+                case ("Phiếu Trả"):
+                        GetData("SELECT * FROM PhieuTra_View", dataGridView1, table);
+                    break;
             }
         }
 
@@ -89,7 +95,6 @@ namespace TTNhom
             table = new DataTable();
             string key = txtTimKiem.Text.Trim();
             string category_key = LoaiHinhcomboBox.Text.Trim();
-
             switch (category_key)
             {
                 case ("Mặt Hàng"):
@@ -162,6 +167,45 @@ namespace TTNhom
                             " OR Phuong LIKE N'%" + key + "%'" +
                             " OR Quan LIKE N'%" + key + "%'" +
                             " OR ThanhPho LIKE N'%" + key + "%'";
+                        GetData(query, dataGridView1, table);
+                    }
+                    break;
+                case ("Phiếu Nhập"):
+                    if (key.Equals(""))
+                    {
+                        GetData("SELECT * FROM PhieuNhap_View", dataGridView1, table);
+                    }
+                    else
+                    {
+                        if (IsNumber(key))
+                        {
+                            string queryID = "SELECT * FROM PhieuNhap_View WHERE idPhieuNhap = '" + key + "' ";
+                            GetData(queryID, dataGridView1, table);
+                        }
+                        string query = "SELECT * FROM PhieuNhap_View WHERE TenMatHang LIKE N'%" + key + "%'" +
+                            " OR TenNCC LIKE N'%" + key + "%'" +
+                            " OR SoLuong LIKE N'%" + key + "%'" +
+                            " OR DonGia LIKE N'%" + key + "%'" +
+                            " OR NgayCC LIKE N'%" + key + "%'";
+                        GetData(query, dataGridView1, table);
+                    }
+                    break;
+                case ("Phiếu Trả"):
+                    if (key.Equals(""))
+                    {
+                        GetData("SELECT * FROM PhieuTra_View", dataGridView1, table);
+                    }
+                    else
+                    {
+                        if (IsNumber(key))
+                        {
+                            string queryID = "SELECT * FROM PhieuTra_View WHERE idPhieuTra = '" + key + "' ";
+                            GetData(queryID, dataGridView1, table);
+                        }
+                        string query = "SELECT * FROM PhieuNhap_View WHERE TenMatHang LIKE N'%" + key + "%'" +
+                            " OR TenQuay LIKE N'%" + key + "%'" +
+                            " OR SoLuong LIKE N'%" + key + "%'" +
+                            " OR NgayTra LIKE N'%" + key + "%'";
                         GetData(query, dataGridView1, table);
                     }
                     break;

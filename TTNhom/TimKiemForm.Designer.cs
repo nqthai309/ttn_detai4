@@ -75,7 +75,9 @@
             "Mặt Hàng",
             "Loại Hàng",
             "Quầy",
-            "Nhà Cung Cấp"});
+            "Nhà Cung Cấp",
+            "Phiếu Nhập",
+            "Phiếu Trả"});
             this.LoaiHinhcomboBox.Location = new System.Drawing.Point(118, 14);
             this.LoaiHinhcomboBox.Name = "LoaiHinhcomboBox";
             this.LoaiHinhcomboBox.Size = new System.Drawing.Size(162, 21);
