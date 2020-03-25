@@ -80,34 +80,7 @@ namespace TTNhom
             obj.ActiveWorkbook.SaveCopyAs(DuongDan + tenFile + ".xlsx");
             obj.ActiveWorkbook.Saved = true;
         }
-        private void xuatExcel2(DataGridView g1, DataGridView g2, string DuongDan, string tenFile)
-        {
-            app obj = new app();
-            obj.Application.Workbooks.Add(Type.Missing);
-            obj.Columns.ColumnWidth = 20;
-
-            app obj2 = new app();
-            obj2.Application.Workbooks.Add(Type.Missing);
-            obj2.Columns.ColumnWidth = 20;
-            for (int i = 1; i < g1.Columns.Count + 1; i++)
-            {
-                obj.Cells[1, i] = g1.Columns[i - 1].HeaderText;
-            }
-            //noi dung
-            for (int i = 0; i < g1.Rows.Count; i++)
-            {
-                for (int j = 0; j < g1.Columns.Count; j++)
-                {
-                    if (g1.Rows[i].Cells[j].Value != null)
-                    {
-                        obj.Cells[i + 2, j + 1] = g1.Rows[i].Cells[j].Value.ToString();
-                    }
-                }
-            }
-
-            obj.ActiveWorkbook.SaveCopyAs(DuongDan + tenFile + ".xlsx");
-            obj.ActiveWorkbook.Saved = true;
-        }
+        
         private void xuấtFileDữLiệuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             xuatExcel(dataGridViewHH, @"D:\", "thongKeHanghoa");
