@@ -20,7 +20,6 @@ namespace TTNhom
         private static string strConn = "Data Source=DESKTOP-1NPLUNJ;Initial Catalog=TTCSDL;Integrated Security=True";
         private static SqlConnection conn = new SqlConnection(DBAccess.strConn);
         private static SqlDataAdapter adt = new SqlDataAdapter();
-        private static SqlCommand cmd = new SqlCommand();
 
         public bool IsNumber(string pText)
         {
@@ -70,22 +69,46 @@ namespace TTNhom
             switch (category_key)
             {
                 case ("Mặt Hàng"):
-                        GetData("SELECT * FROM MatHang_View", dataGridView1, table);
+                    GetData("SELECT * FROM MatHang_View", dataGridView1, table);
+                    labelTimeFrom.Hide();
+                    fromDatePicker.Hide();
+                    labelTimeTo.Hide();
+                    toDatePicker.Hide();
                     break;
                 case ("Loại Hàng"):
-                        GetData("SELECT * FROM LoaiHang", dataGridView1, table);
+                    GetData("SELECT * FROM LoaiHang", dataGridView1, table);
+                    labelTimeFrom.Hide();
+                    fromDatePicker.Hide();
+                    labelTimeTo.Hide();
+                    toDatePicker.Hide();
                     break;
                 case ("Quầy"):
-                        GetData("SELECT * FROM Quay", dataGridView1, table);
+                    GetData("SELECT * FROM Quay", dataGridView1, table);
+                    labelTimeFrom.Hide();
+                    fromDatePicker.Hide();
+                    labelTimeTo.Hide();
+                    toDatePicker.Hide();
                     break;
                 case ("Nhà Cung Cấp"):
-                        GetData("SELECT * FROM NhaCungCap", dataGridView1, table);
+                    GetData("SELECT * FROM NhaCungCap", dataGridView1, table);
+                    labelTimeFrom.Hide();
+                    fromDatePicker.Hide();
+                    labelTimeTo.Hide();
+                    toDatePicker.Hide();
                     break;
                 case ("Phiếu Nhập"):
-                        GetData("SELECT * FROM PhieuNhap_View", dataGridView1, table);
+                    GetData("SELECT * FROM PhieuNhap_View", dataGridView1, table);
+                    labelTimeFrom.Show();
+                    fromDatePicker.Show();
+                    labelTimeTo.Show();
+                    toDatePicker.Show();
                     break;
                 case ("Phiếu Trả"):
-                        GetData("SELECT * FROM PhieuTra_View", dataGridView1, table);
+                    GetData("SELECT * FROM PhieuTra_View", dataGridView1, table);
+                    labelTimeFrom.Show();
+                    fromDatePicker.Show();
+                    labelTimeTo.Show();
+                    toDatePicker.Show();
                     break;
             }
         }
@@ -95,6 +118,10 @@ namespace TTNhom
             table = new DataTable();
             string key = txtTimKiem.Text.Trim();
             string category_key = LoaiHinhcomboBox.Text.Trim();
+            string fromDate = fromDatePicker.Text;
+            string toDate = toDatePicker.Text;
+
+            
             switch (category_key)
             {
                 case ("Mặt Hàng"):
@@ -166,50 +193,204 @@ namespace TTNhom
                         string query = "SELECT * FROM NhaCungCap WHERE TenNCC LIKE N'%" + key + "%'" +
                             " OR Phuong LIKE N'%" + key + "%'" +
                             " OR Quan LIKE N'%" + key + "%'" +
-                            " OR ThanhPho LIKE N'%" + key + "%'";
+                            " OR ThanhPho LIKE N'%" + key + "%'"; 
                         GetData(query, dataGridView1, table);
                     }
                     break;
                 case ("Phiếu Nhập"):
                     if (key.Equals(""))
                     {
-                        GetData("SELECT * FROM PhieuNhap_View", dataGridView1, table);
+                        if(fromDate == " "  && toDate == " ")
+                        {
+                            GetData("SELECT * FROM PhieuNhap_View", dataGridView1, table);
+                        } else if (fromDate != " " && toDate == " ")
+                        {
+                            GetData("SELECT * FROM PhieuNhap_View WHERE  NgayCC LIKE " + "'" + fromDate + "'", dataGridView1, table);
+                        }
+                        else if (fromDate == " " && toDate != " ")
+                        {
+                            GetData("SELECT * FROM PhieuNhap_View WHERE  NgayCC LIKE " + "'" + toDate + "'", dataGridView1, table);
+                        } else
+                        {
+                            GetData("SELECT * FROM PhieuNhap_View WHERE  NgayCC BETWEEN " + "'" + fromDate + "'" + " AND " + "'" + toDate + "'", dataGridView1, table);
+                        }
                     }
                     else
                     {
-                        if (IsNumber(key))
-                        {
-                            string queryID = "SELECT * FROM PhieuNhap_View WHERE idPhieuNhap = '" + key + "' ";
-                            GetData(queryID, dataGridView1, table);
-                        }
-                        string query = "SELECT * FROM PhieuNhap_View WHERE TenMatHang LIKE N'%" + key + "%'" +
-                            " OR TenNCC LIKE N'%" + key + "%'" +
-                            " OR SoLuong LIKE N'%" + key + "%'" +
-                            " OR DonGia LIKE N'%" + key + "%'" +
-                            " OR NgayCC LIKE N'%" + key + "%'";
-                        GetData(query, dataGridView1, table);
+                        if (fromDate == " " && toDate == " ")
+                            {
+                            if (IsNumber(key))
+                            {
+                                GetData("SELECT * FROM PhieuNhap_View WHERE idPhieuNhap = '" + key + "' " +
+                                    " OR SoLuong = '" + key + "'" +
+                                    " OR DonGia = '" + key + "'"
+                                    , dataGridView1, table);
+                            } else
+                            {
+                                GetData(
+                                    "SELECT * FROM PhieuNhap_View WHERE TenMatHang LIKE N'%" + key + "%'" +
+                                    " OR TenNCC LIKE N'%" + key + "%'" +
+                                    " OR SoLuong = '" + key + "'" +
+                                    " OR DonGia = '" + key + "'"
+                                , dataGridView1, table);
+                            }
+                        }else if (fromDate != " " && toDate == " ")
+                            {
+                                if (IsNumber(key))
+                                {
+                                    GetData("SELECT * FROM PhieuNhap_View WHERE (idPhieuNhap = '" + key + "' " +
+                                    " OR SoLuong = '" + key + "'" +
+                                    " OR DonGia = '" + key + "')"+
+                                    "AND NgayCC LIKE " + "'" + fromDate + "'", dataGridView1, table);
+                                }
+                                else
+                                {
+                                    GetData(
+                                        "SELECT * FROM PhieuNhap_View WHERE (TenMatHang LIKE N'%" + key + "%'" +
+                                        " OR TenNCC LIKE N'%" + key + "%'" +
+                                        " AND NgayCC LIKE " + "'" + fromDate + "'"
+                                    , dataGridView1, table);
+                                }  
+                            }
+                        else if (fromDate == " " && toDate != " ")
+                            {
+                                if (IsNumber(key))
+                                {
+                                    GetData("SELECT * FROM PhieuNhap_View WHERE (idPhieuNhap = '" + key + "' " +
+                                    " OR SoLuong = '" + key + "'" +
+                                    " OR DonGia = '" + key + "')" +
+                                    "AND NgayCC LIKE " + "'" + toDate + "'", dataGridView1, table);
+                                }
+                                else
+                                {
+                                    GetData(
+                                        "SELECT * FROM PhieuNhap_View WHERE (TenMatHang LIKE N'%" + key + "%'" +
+                                        " OR TenNCC LIKE N'%" + key + "%'" +
+                                        " AND NgayCC LIKE " + "'" + toDate + "'"
+                                    , dataGridView1, table);
+                                }
+                            }
+                        else
+                            {
+                                if (IsNumber(key))
+                                {
+                                    GetData("SELECT * FROM PhieuNhap_View WHERE (idPhieuNhap = '" + key + "' " +
+                                    " OR SoLuong = '" + key + "'" +
+                                    " OR DonGia = '" + key + "')" + 
+                                    " AND (NgayCC BETWEEN " + "'" + fromDate + "'" + " AND " + "'" + toDate + "')", dataGridView1, table);
+                                } else
+                                {
+                                    GetData(
+                                        "SELECT * FROM PhieuNhap_View WHERE (TenMatHang LIKE N'%" + key + "%'" +
+                                        " OR TenNCC LIKE N'%" + key + "%'" +
+                                        " AND (NgayCC BETWEEN " + "'" + fromDate + "'" + " AND " + "'" + toDate + "')"
+                                    , dataGridView1, table);
+                                }
+                            }        
                     }
                     break;
                 case ("Phiếu Trả"):
                     if (key.Equals(""))
                     {
-                        GetData("SELECT * FROM PhieuTra_View", dataGridView1, table);
+                        if (fromDate == " " && toDate == " ")
+                        {
+                            GetData("SELECT * FROM PhieuTra_View", dataGridView1, table);
+                        }
+                        else if (fromDate != " " && toDate == " ")
+                        {
+                            GetData("SELECT * FROM PhieuTra_View WHERE  NgayTra LIKE " + "'" + fromDate + "'", dataGridView1, table);
+                        }
+                        else if (fromDate == " " && toDate != " ")
+                        {
+                            GetData("SELECT * FROM PhieuTra_View WHERE  NgayTra LIKE " + "'" + toDate + "'", dataGridView1, table);
+                        }
+                        else
+                        {
+                            GetData("SELECT * FROM PhieuTra_View WHERE  NgayTra BETWEEN " + "'" + fromDate + "'" + " AND " + "'" + toDate + "'", dataGridView1, table);
+                        }
                     }
                     else
                     {
-                        if (IsNumber(key))
+                        if (fromDate == " " && toDate == " ")
                         {
-                            string queryID = "SELECT * FROM PhieuTra_View WHERE idPhieuTra = '" + key + "' ";
-                            GetData(queryID, dataGridView1, table);
+                            if (IsNumber(key))
+                            {
+                                GetData("SELECT * FROM PhieuTra_View WHERE idPhieuTra = '" + key + "' " +
+                                    " OR SoLuong = '" + key + "'"
+                                    , dataGridView1, table);
+                            }
+                            else
+                            {
+                                GetData(
+                                    "SELECT * FROM PhieuTra_View WHERE TenMatHang LIKE N'%" + key + "%'" +
+                                    " OR TenQuay LIKE N'%" + key + "%'"
+                                , dataGridView1, table);
+                            }
                         }
-                        string query = "SELECT * FROM PhieuNhap_View WHERE TenMatHang LIKE N'%" + key + "%'" +
-                            " OR TenQuay LIKE N'%" + key + "%'" +
-                            " OR SoLuong LIKE N'%" + key + "%'" +
-                            " OR NgayTra LIKE N'%" + key + "%'";
-                        GetData(query, dataGridView1, table);
+                        else if (fromDate != " " && toDate == " ")
+                        {
+                            if (IsNumber(key))
+                            {
+                                GetData("SELECT * FROM PhieuTra_View WHERE (idPhieuTra = '" + key + "' " +
+                                " OR SoLuong = '" + key + "')" +
+                                "AND NgayTra LIKE " + "'" + fromDate + "'", dataGridView1, table);
+                            }
+                            else
+                            {
+                                GetData(
+                                    "SELECT * FROM PhieuTra_View WHERE (TenMatHang LIKE N'%" + key + "%'" +
+                                    " OR TenQuay LIKE N'%" + key + "%')" +
+                                    " AND NgayTra LIKE " + "'" + fromDate + "'"
+                                , dataGridView1, table);
+                            }
+                        }
+                        else if (fromDate == " " && toDate != " ")
+                        {
+                            if (IsNumber(key))
+                            {
+                                GetData("SELECT * FROM PhieuTra_View WHERE (idPhieuTra = '" + key + "' " +
+                                " OR SoLuong = '" + key + "')" +
+                                "AND NgayTra LIKE " + "'" + toDate + "'", dataGridView1, table);
+                            }
+                            else
+                            {
+                                GetData(
+                                    "SELECT * FROM PhieuTra_View WHERE (TenMatHang LIKE N'%" + key + "%'" +
+                                    " OR TenQuay LIKE N'%" + key + "%')" +
+                                    " AND NgayTra LIKE " + "'" + toDate + "'"
+                                , dataGridView1, table);
+                            }
+                        }
+                        else
+                        {
+                            if (IsNumber(key))
+                            {
+                                GetData("SELECT * FROM PhieuTra_View WHERE (idPhieuTra = '" + key + "' " +
+                                " OR SoLuong = '" + key + "')" +
+                                " AND (NgayTra BETWEEN " + "'" + fromDate + "'" + " AND " + "'" + toDate + "')", dataGridView1, table);
+                            }
+                            else
+                            {
+                                GetData(
+                                    "SELECT * FROM PhieuTra_View WHERE (TenMatHang LIKE N'%" + key + "%'" +
+                                    " OR TenQuay LIKE N'%" + key + "%')" +
+                                    " AND (NgayTra BETWEEN " + "'" + fromDate + "'" + " AND " + "'" + toDate + "')"
+                                , dataGridView1, table);
+                            }
+                        }
                     }
                     break;
             }
+        }
+
+        private void fromDatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            fromDatePicker.CustomFormat = "yyyy-MM-dd";
+        }
+
+        private void toDatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            toDatePicker.CustomFormat = "yyyy-MM-dd";
         }
     }
 }

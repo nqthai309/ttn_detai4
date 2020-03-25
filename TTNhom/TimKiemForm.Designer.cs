@@ -35,6 +35,10 @@
             this.LoaiHinhcomboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelTimeFrom = new System.Windows.Forms.Label();
+            this.labelTimeTo = new System.Windows.Forms.Label();
+            this.fromDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.toDatePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,17 +47,17 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 43);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 78);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(712, 407);
+            this.dataGridView1.Size = new System.Drawing.Size(712, 364);
             this.dataGridView1.TabIndex = 8;
             // 
             // btnTimKiem
             // 
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
-            this.btnTimKiem.Location = new System.Drawing.Point(669, 9);
+            this.btnTimKiem.Location = new System.Drawing.Point(689, 12);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(34, 29);
             this.btnTimKiem.TabIndex = 7;
@@ -63,9 +67,9 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(385, 12);
+            this.txtTimKiem.Location = new System.Drawing.Point(402, 15);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(255, 23);
+            this.txtTimKiem.Size = new System.Drawing.Size(267, 23);
             this.txtTimKiem.TabIndex = 6;
             // 
             // LoaiHinhcomboBox
@@ -78,16 +82,16 @@
             "Nhà Cung Cấp",
             "Phiếu Nhập",
             "Phiếu Trả"});
-            this.LoaiHinhcomboBox.Location = new System.Drawing.Point(118, 14);
+            this.LoaiHinhcomboBox.Location = new System.Drawing.Point(101, 18);
             this.LoaiHinhcomboBox.Name = "LoaiHinhcomboBox";
-            this.LoaiHinhcomboBox.Size = new System.Drawing.Size(162, 21);
+            this.LoaiHinhcomboBox.Size = new System.Drawing.Size(194, 21);
             this.LoaiHinhcomboBox.TabIndex = 9;
             this.LoaiHinhcomboBox.SelectedIndexChanged += new System.EventHandler(this.LoaiHinhcomboBox_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(316, 17);
+            this.label1.Location = new System.Drawing.Point(330, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 10;
@@ -96,17 +100,64 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 18);
+            this.label2.Location = new System.Drawing.Point(31, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "Loại hình:";
+            // 
+            // labelTimeFrom
+            // 
+            this.labelTimeFrom.AutoSize = true;
+            this.labelTimeFrom.Location = new System.Drawing.Point(30, 51);
+            this.labelTimeFrom.Name = "labelTimeFrom";
+            this.labelTimeFrom.Size = new System.Drawing.Size(54, 13);
+            this.labelTimeFrom.TabIndex = 12;
+            this.labelTimeFrom.Text = "Thời gian:";
+            this.labelTimeFrom.Visible = false;
+            // 
+            // labelTimeTo
+            // 
+            this.labelTimeTo.AutoSize = true;
+            this.labelTimeTo.Location = new System.Drawing.Point(330, 55);
+            this.labelTimeTo.Name = "labelTimeTo";
+            this.labelTimeTo.Size = new System.Drawing.Size(30, 13);
+            this.labelTimeTo.TabIndex = 14;
+            this.labelTimeTo.Text = "Đến:";
+            this.labelTimeTo.Visible = false;
+            // 
+            // fromDatePicker
+            // 
+            this.fromDatePicker.CustomFormat = " ";
+            this.fromDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.fromDatePicker.Location = new System.Drawing.Point(101, 49);
+            this.fromDatePicker.Name = "fromDatePicker";
+            this.fromDatePicker.Size = new System.Drawing.Size(194, 20);
+            this.fromDatePicker.TabIndex = 15;
+            this.fromDatePicker.Visible = false;
+            this.fromDatePicker.ValueChanged += new System.EventHandler(this.fromDatePicker_ValueChanged);
+            // 
+            // toDatePicker
+            // 
+            this.toDatePicker.CustomFormat = " ";
+            this.toDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.toDatePicker.Location = new System.Drawing.Point(402, 48);
+            this.toDatePicker.Name = "toDatePicker";
+            this.toDatePicker.Size = new System.Drawing.Size(194, 20);
+            this.toDatePicker.TabIndex = 16;
+            this.toDatePicker.Value = new System.DateTime(2020, 3, 25, 11, 42, 54, 0);
+            this.toDatePicker.Visible = false;
+            this.toDatePicker.ValueChanged += new System.EventHandler(this.toDatePicker_ValueChanged);
             // 
             // TimKiemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 454);
+            this.Controls.Add(this.toDatePicker);
+            this.Controls.Add(this.fromDatePicker);
+            this.Controls.Add(this.labelTimeTo);
+            this.Controls.Add(this.labelTimeFrom);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LoaiHinhcomboBox);
@@ -131,5 +182,9 @@
         private System.Windows.Forms.ComboBox LoaiHinhcomboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTimeFrom;
+        private System.Windows.Forms.Label labelTimeTo;
+        private System.Windows.Forms.DateTimePicker fromDatePicker;
+        private System.Windows.Forms.DateTimePicker toDatePicker;
     }
 }
