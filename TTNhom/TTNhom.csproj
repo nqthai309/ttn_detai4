@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="ThemQuayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemQuayForm.Designer.cs">
+      <DependentUpon>ThemQuayForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="ThemMoiMatHangForm.Designer.cs">
       <DependentUpon>ThemMoiMatHangForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemNCCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemNCCForm.Designer.cs">
+      <DependentUpon>ThemNCCForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongKeForm.cs">
       <SubType>Form</SubType>
@@ -123,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemMoiMatHangForm.resx">
       <DependentUpon>ThemMoiMatHangForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemNCCForm.resx">
+      <DependentUpon>ThemNCCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemQuayForm.resx">
+      <DependentUpon>ThemQuayForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongKeForm.resx">
       <DependentUpon>ThongKeForm.cs</DependentUpon>

@@ -56,3 +56,21 @@ F:\TTN\TTNhom\obj\Debug\TTNhom.QuanLyNhanVienForm.resources
 F:\TTN\TTNhom\obj\Debug\TTNhom.ThemMoiMatHangForm.resources
 F:\TTN\TTNhom\obj\Debug\TTNhom.ThongKeForm.resources
 F:\TTN\TTNhom\obj\Debug\TTNhom.TimKiemForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\bin\Debug\TTNhom.exe.config
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\bin\Debug\TTNhom.exe
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\bin\Debug\TTNhom.pdb
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.csprojAssemblyReference.cache
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.FormLogin.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.FromAddLoaiHang.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.MainForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.NhapXuatForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.Properties.Resources.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.QuanLyNhanVienForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.ThemMoiMatHangForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.ThongKeForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.TimKiemForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.csproj.GenerateResource.cache
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.exe
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.pdb
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.ThemNCCForm.resources
+C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.ThemQuayForm.resources

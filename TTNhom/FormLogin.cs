@@ -27,6 +27,7 @@ namespace TTNhom
         public static string ngaySinh;
         public static string phone;
         public static string NVQL;
+        public static string TaiKhoan;
         public FormLogin()
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace TTNhom
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            
+            TaiKhoan = txtUser.Text;
             string query = "SELECT * FROM dbo.NhanVien WHERE TaiKhoan = '"+txtUser.Text+"' AND MatKhau = '"+txtPass.Text+"' ";
             dbAccess.readDataToAdapter(query, dt);
             int a = dt.Rows.Count;
