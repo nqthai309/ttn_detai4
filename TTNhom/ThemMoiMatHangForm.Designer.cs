@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemMoiMatHangForm));
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTenQuay = new System.Windows.Forms.ComboBox();
+            this.comboBoxTenLoaiHang = new System.Windows.Forms.ComboBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Add = new System.Windows.Forms.Button();
+            this.textBoxTenMatHang = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -41,21 +41,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox2
+            // comboBoxTenQuay
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(156, 227);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(528, 21);
-            this.comboBox2.TabIndex = 23;
+            this.comboBoxTenQuay.FormattingEnabled = true;
+            this.comboBoxTenQuay.Location = new System.Drawing.Point(156, 227);
+            this.comboBoxTenQuay.Name = "comboBoxTenQuay";
+            this.comboBoxTenQuay.Size = new System.Drawing.Size(528, 21);
+            this.comboBoxTenQuay.TabIndex = 23;
             // 
-            // comboBox1
+            // comboBoxTenLoaiHang
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(156, 182);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(466, 21);
-            this.comboBox1.TabIndex = 22;
+            this.comboBoxTenLoaiHang.FormattingEnabled = true;
+            this.comboBoxTenLoaiHang.Location = new System.Drawing.Point(156, 182);
+            this.comboBoxTenLoaiHang.Name = "comboBoxTenLoaiHang";
+            this.comboBoxTenLoaiHang.Size = new System.Drawing.Size(466, 21);
+            this.comboBoxTenLoaiHang.TabIndex = 22;
             // 
             // pictureBox6
             // 
@@ -68,25 +68,25 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.PictureBox6_Click);
             // 
-            // button6
+            // Add
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button6.Location = new System.Drawing.Point(28, 273);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(656, 56);
-            this.button6.TabIndex = 20;
-            this.button6.Text = "Thêm Mới Mặt Hàng";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Add.Location = new System.Drawing.Point(28, 273);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(656, 56);
+            this.Add.TabIndex = 20;
+            this.Add.Text = "Thêm Mới Mặt Hàng";
+            this.Add.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // textBoxTenMatHang
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(528, 20);
-            this.textBox1.TabIndex = 19;
+            this.textBoxTenMatHang.Location = new System.Drawing.Point(156, 140);
+            this.textBoxTenMatHang.Name = "textBoxTenMatHang";
+            this.textBoxTenMatHang.Size = new System.Drawing.Size(528, 20);
+            this.textBoxTenMatHang.TabIndex = 19;
             // 
             // label9
             // 
@@ -134,11 +134,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 409);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxTenQuay);
+            this.Controls.Add(this.comboBoxTenLoaiHang);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Add);
+            this.Controls.Add(this.textBoxTenMatHang);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -154,11 +154,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxTenQuay;
+        private System.Windows.Forms.ComboBox comboBoxTenLoaiHang;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.TextBox textBoxTenMatHang;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
