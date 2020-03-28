@@ -41,83 +41,93 @@
             // 
             // txtTenNCC
             // 
-            this.txtTenNCC.Location = new System.Drawing.Point(173, 39);
+            this.txtTenNCC.Location = new System.Drawing.Point(109, 41);
+            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(239, 22);
+            this.txtTenNCC.Size = new System.Drawing.Size(180, 20);
             this.txtTenNCC.TabIndex = 0;
             // 
             // btnThemNCC
             // 
-            this.btnThemNCC.Location = new System.Drawing.Point(485, 38);
+            this.btnThemNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThemNCC.Location = new System.Drawing.Point(109, 202);
+            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemNCC.Name = "btnThemNCC";
-            this.btnThemNCC.Size = new System.Drawing.Size(102, 23);
+            this.btnThemNCC.Size = new System.Drawing.Size(127, 46);
             this.btnThemNCC.TabIndex = 1;
-            this.btnThemNCC.Text = "Them ncc";
+            this.btnThemNCC.Text = "Them NCC";
             this.btnThemNCC.UseVisualStyleBackColor = true;
             this.btnThemNCC.Click += new System.EventHandler(this.btnThemNCC_Click);
             // 
             // txtPhuong
             // 
-            this.txtPhuong.Location = new System.Drawing.Point(173, 91);
+            this.txtPhuong.Location = new System.Drawing.Point(109, 83);
+            this.txtPhuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhuong.Name = "txtPhuong";
-            this.txtPhuong.Size = new System.Drawing.Size(239, 22);
+            this.txtPhuong.Size = new System.Drawing.Size(180, 20);
             this.txtPhuong.TabIndex = 2;
             // 
             // txtQuan
             // 
-            this.txtQuan.Location = new System.Drawing.Point(173, 137);
+            this.txtQuan.Location = new System.Drawing.Point(109, 120);
+            this.txtQuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtQuan.Name = "txtQuan";
-            this.txtQuan.Size = new System.Drawing.Size(239, 22);
+            this.txtQuan.Size = new System.Drawing.Size(180, 20);
             this.txtQuan.TabIndex = 3;
             // 
             // txtThanhPho
             // 
-            this.txtThanhPho.Location = new System.Drawing.Point(173, 183);
+            this.txtThanhPho.Location = new System.Drawing.Point(109, 158);
+            this.txtThanhPho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtThanhPho.Name = "txtThanhPho";
-            this.txtThanhPho.Size = new System.Drawing.Size(239, 22);
+            this.txtThanhPho.Size = new System.Drawing.Size(180, 20);
             this.txtThanhPho.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 38);
+            this.label1.Location = new System.Drawing.Point(18, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 17);
+            this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nha Cung Cap";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 91);
+            this.label2.Location = new System.Drawing.Point(20, 83);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 17);
+            this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Ten Phuong";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 137);
+            this.label3.Location = new System.Drawing.Point(20, 120);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 17);
+            this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Ten Quan";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 183);
+            this.label4.Location = new System.Drawing.Point(20, 158);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 17);
+            this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Ten Thanh Pho";
             // 
             // ThemNCCForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 255);
+            this.ClientSize = new System.Drawing.Size(318, 281);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -127,6 +137,7 @@
             this.Controls.Add(this.txtPhuong);
             this.Controls.Add(this.btnThemNCC);
             this.Controls.Add(this.txtTenNCC);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ThemNCCForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemNCCForm";

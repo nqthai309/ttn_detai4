@@ -84,11 +84,11 @@ namespace TTNhom
             if (key.Equals(""))
             {
                 table = new DataTable();
-                GetData("select * from NhanVien", gridView2, table);
+                GetData("select * from NhanVien where NVQL = N'"+FormLogin.ten+"'", gridView2, table);
             }
             else
             {
-                string query = "SELECT * FROM dbo.NhanVien WHERE TenNhanVien LIKE N'%" + key + "%' or ThanhPho LIKE N'%" + key + "%' or NVQL LIKE N'%" + key + "%' or TaiKhoan LIKE '%" + key + "%'";
+                string query = "SELECT * FROM dbo.NhanVien WHERE (TenNhanVien LIKE N'%" + key + "%' or ThanhPho LIKE N'%" + key + "%' or NVQL LIKE N'%" + key + "%' or TaiKhoan LIKE '%" + key + "%') AND NVQL = N'"+FormLogin.ten+"'";
                 table = new DataTable();
                 GetData(query, gridView2, table);
             }
@@ -154,6 +154,11 @@ namespace TTNhom
                     GetData("select * from NhanVien", gridView2, table);
                 }
             }
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

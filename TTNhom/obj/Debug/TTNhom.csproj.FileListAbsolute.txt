@@ -74,3 +74,6 @@ C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.exe
 C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.pdb
 C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.ThemNCCForm.resources
 C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.ThemQuayForm.resources
+F:\TTN\TTNhom\obj\Debug\TTNhom.csproj.ResolveComReference.cache
+F:\TTN\TTNhom\obj\Debug\TTNhom.ThemNCCForm.resources
+F:\TTN\TTNhom\obj\Debug\TTNhom.ThemQuayForm.resources
