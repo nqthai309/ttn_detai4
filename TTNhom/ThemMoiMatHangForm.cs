@@ -20,6 +20,9 @@ namespace TTNhom
         private static SqlDataAdapter adt = new SqlDataAdapter();
         private static SqlCommand cmd = new SqlCommand();
         string variable;
+
+        public object FormAddLoaiHang { get; private set; }
+
         public ThemMoiMatHangForm()
         {
             InitializeComponent();
@@ -60,15 +63,9 @@ namespace TTNhom
             addComboBox(conn, cmd, listTenQuay, "TenQuay", "Quay", comboBoxTenQuay);
             addComboBox(conn, cmd, listTenLoaiHang, "TenLoaiHang", "LoaiHang", comboBoxTenLoaiHang);
         }
-
-        private void PictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
         private void comboBoxTenLoaiHang_SelectedIndexChanged(object sender, EventArgs e)
         {
             table = new DataTable();
-
         }
 
         private void comboBoxTenQuay_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,8 +94,14 @@ namespace TTNhom
                 cmd = new SqlCommand(queryInsert, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("Thêm mặt hầng thành công");
+                MessageBox.Show("Thêm mặt hàng thành công");
             }
+        }
+
+        private void pictureBoxThemLoaiHang_Click(object sender, EventArgs e)
+        {
+            FormAddLoaiHang formAddLoaiHang = new FormAddLoaiHang();
+            formAddLoaiHang.Show();
         }
     }
 }

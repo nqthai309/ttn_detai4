@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemMoiMatHangForm));
             this.comboBoxTenQuay = new System.Windows.Forms.ComboBox();
             this.comboBoxTenLoaiHang = new System.Windows.Forms.ComboBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxThemLoaiHang = new System.Windows.Forms.PictureBox();
             this.Add = new System.Windows.Forms.Button();
             this.textBoxTenMatHang = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThemLoaiHang)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxTenQuay
@@ -57,16 +57,16 @@
             this.comboBoxTenLoaiHang.Size = new System.Drawing.Size(466, 21);
             this.comboBoxTenLoaiHang.TabIndex = 22;
             // 
-            // pictureBox6
+            // pictureBoxThemLoaiHang
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(628, 166);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(56, 51);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 21;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.PictureBox6_Click);
+            this.pictureBoxThemLoaiHang.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxThemLoaiHang.Image")));
+            this.pictureBoxThemLoaiHang.Location = new System.Drawing.Point(628, 166);
+            this.pictureBoxThemLoaiHang.Name = "pictureBoxThemLoaiHang";
+            this.pictureBoxThemLoaiHang.Size = new System.Drawing.Size(56, 51);
+            this.pictureBoxThemLoaiHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxThemLoaiHang.TabIndex = 21;
+            this.pictureBoxThemLoaiHang.TabStop = false;
+            this.pictureBoxThemLoaiHang.Click += new System.EventHandler(this.pictureBoxThemLoaiHang_Click);
             // 
             // Add
             // 
@@ -136,7 +136,7 @@
             this.ClientSize = new System.Drawing.Size(708, 409);
             this.Controls.Add(this.comboBoxTenQuay);
             this.Controls.Add(this.comboBoxTenLoaiHang);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBoxThemLoaiHang);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.textBoxTenMatHang);
             this.Controls.Add(this.label9);
@@ -146,7 +146,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ThemMoiMatHangForm";
             this.Text = "ThemMoiMatHangForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThemLoaiHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,7 +156,7 @@
 
         private System.Windows.Forms.ComboBox comboBoxTenQuay;
         private System.Windows.Forms.ComboBox comboBoxTenLoaiHang;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBoxThemLoaiHang;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.TextBox textBoxTenMatHang;
         private System.Windows.Forms.Label label9;
