@@ -1,6 +1,6 @@
 ﻿namespace TTNhom
 {
-    partial class FromAddLoaiHang
+    partial class FormAddLoaiHang
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxThemLoaiHang = new System.Windows.Forms.TextBox();
+            this.buttonThemMoiLoaiHang = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -42,31 +42,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Loại Hàng Mới";
             // 
-            // textBox1
+            // textBoxThemLoaiHang
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 20);
-            this.textBox1.TabIndex = 1;
+            this.textBoxThemLoaiHang.Location = new System.Drawing.Point(117, 20);
+            this.textBoxThemLoaiHang.Name = "textBoxThemLoaiHang";
+            this.textBoxThemLoaiHang.Size = new System.Drawing.Size(154, 20);
+            this.textBoxThemLoaiHang.TabIndex = 1;
             // 
-            // button1
+            // buttonThemMoiLoaiHang
             // 
-            this.button1.Location = new System.Drawing.Point(286, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Thêm Mới";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonThemMoiLoaiHang.Location = new System.Drawing.Point(286, 18);
+            this.buttonThemMoiLoaiHang.Name = "buttonThemMoiLoaiHang";
+            this.buttonThemMoiLoaiHang.Size = new System.Drawing.Size(93, 23);
+            this.buttonThemMoiLoaiHang.TabIndex = 2;
+            this.buttonThemMoiLoaiHang.Text = "Thêm Mới";
+            this.buttonThemMoiLoaiHang.UseVisualStyleBackColor = true;
+            this.buttonThemMoiLoaiHang.Click += new System.EventHandler(this.buttonThemMoiLoaiHang_Click);
             // 
-            // FromAddLoaiHang
+            // FormAddLoaiHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 54);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonThemMoiLoaiHang);
+            this.Controls.Add(this.textBoxThemLoaiHang);
             this.Controls.Add(this.label1);
-            this.Name = "FromAddLoaiHang";
+            this.Name = "FormAddLoaiHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FromAddLoaiHang";
             this.ResumeLayout(false);
@@ -77,7 +78,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBoxThemLoaiHang;
+        private System.Windows.Forms.Button buttonThemMoiLoaiHang;
     }
 }
