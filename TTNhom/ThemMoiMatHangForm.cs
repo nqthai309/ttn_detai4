@@ -21,7 +21,7 @@ namespace TTNhom
         private static SqlCommand cmd = new SqlCommand();
         string variable;
 
-        public object FormAddLoaiHang { get; private set; }
+        public object FormAddLoaiHangMoi { get; private set; }
 
         public ThemMoiMatHangForm()
         {
@@ -100,8 +100,8 @@ namespace TTNhom
 
         private void pictureBoxThemLoaiHang_Click(object sender, EventArgs e)
         {
-            FormAddLoaiHang formAddLoaiHang = new FormAddLoaiHang();
-            formAddLoaiHang.Show();
+            FormAddLoaiHangMoi formAddLoaiHangMoi = new FormAddLoaiHangMoi();
+            formAddLoaiHangMoi.Show();
         }
     }
 }

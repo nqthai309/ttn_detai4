@@ -38,7 +38,7 @@
             this.buttonThemMoiLoaiHang.Location = new System.Drawing.Point(293, 16);
             this.buttonThemMoiLoaiHang.Name = "buttonThemMoiLoaiHang";
             this.buttonThemMoiLoaiHang.Size = new System.Drawing.Size(93, 23);
-            this.buttonThemMoiLoaiHang.TabIndex = 5;
+            this.buttonThemMoiLoaiHang.TabIndex = 8;
             this.buttonThemMoiLoaiHang.Text = "Thêm Mới";
             this.buttonThemMoiLoaiHang.UseVisualStyleBackColor = true;
             // 
@@ -47,7 +47,7 @@
             this.textBoxThemLoaiHang.Location = new System.Drawing.Point(124, 18);
             this.textBoxThemLoaiHang.Name = "textBoxThemLoaiHang";
             this.textBoxThemLoaiHang.Size = new System.Drawing.Size(154, 20);
-            this.textBoxThemLoaiHang.TabIndex = 4;
+            this.textBoxThemLoaiHang.TabIndex = 7;
             // 
             // label1
             // 
@@ -55,7 +55,7 @@
             this.label1.Location = new System.Drawing.Point(20, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Tên Loại Hàng Mới";
             // 
             // FormAddLoaiHangMoi

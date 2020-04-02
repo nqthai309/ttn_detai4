@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="FormAddLoaiHangMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddLoaiHangMoi.Designer.cs">
+      <DependentUpon>FormAddLoaiHangMoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThemQuayForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,12 +64,6 @@
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FromAddLoaiHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FromAddLoaiHang.Designer.cs">
-      <DependentUpon>FromAddLoaiHang.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -109,11 +109,11 @@
     <Compile Include="TimKiemForm.Designer.cs">
       <DependentUpon>TimKiemForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormAddLoaiHangMoi.resx">
+      <DependentUpon>FormAddLoaiHangMoi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FromAddLoaiHang.resx">
-      <DependentUpon>FromAddLoaiHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
