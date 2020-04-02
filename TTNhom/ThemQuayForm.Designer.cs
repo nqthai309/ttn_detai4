@@ -38,7 +38,7 @@
             // txtTenQuay
             // 
             this.txtTenQuay.Location = new System.Drawing.Point(111, 32);
-            this.txtTenQuay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenQuay.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenQuay.Name = "txtTenQuay";
             this.txtTenQuay.Size = new System.Drawing.Size(166, 20);
             this.txtTenQuay.TabIndex = 0;
@@ -67,7 +67,7 @@
             // 
             this.btnThemQuay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThemQuay.Location = new System.Drawing.Point(72, 114);
-            this.btnThemQuay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThemQuay.Margin = new System.Windows.Forms.Padding(2);
             this.btnThemQuay.Name = "btnThemQuay";
             this.btnThemQuay.Size = new System.Drawing.Size(147, 36);
             this.btnThemQuay.TabIndex = 4;
@@ -77,9 +77,10 @@
             // 
             // cbMaNV
             // 
+            this.cbMaNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMaNV.FormattingEnabled = true;
             this.cbMaNV.Location = new System.Drawing.Point(111, 72);
-            this.cbMaNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbMaNV.Margin = new System.Windows.Forms.Padding(2);
             this.cbMaNV.Name = "cbMaNV";
             this.cbMaNV.Size = new System.Drawing.Size(166, 21);
             this.cbMaNV.TabIndex = 5;
@@ -94,7 +95,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenQuay);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ThemQuayForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemQuayForm";

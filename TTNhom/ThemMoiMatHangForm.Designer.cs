@@ -43,6 +43,7 @@
             // 
             // comboBoxTenQuay
             // 
+            this.comboBoxTenQuay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTenQuay.FormattingEnabled = true;
             this.comboBoxTenQuay.Location = new System.Drawing.Point(156, 227);
             this.comboBoxTenQuay.Name = "comboBoxTenQuay";
@@ -51,6 +52,7 @@
             // 
             // comboBoxTenLoaiHang
             // 
+            this.comboBoxTenLoaiHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTenLoaiHang.FormattingEnabled = true;
             this.comboBoxTenLoaiHang.Location = new System.Drawing.Point(156, 182);
             this.comboBoxTenLoaiHang.Name = "comboBoxTenLoaiHang";
@@ -80,6 +82,7 @@
             this.Add.TabIndex = 20;
             this.Add.Text = "Thêm Mới Mặt Hàng";
             this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // textBoxTenMatHang
             // 

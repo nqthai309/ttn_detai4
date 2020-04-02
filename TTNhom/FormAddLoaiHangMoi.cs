@@ -21,7 +21,7 @@ namespace TTNhom
         private static SqlCommand cmd = new SqlCommand();
         public FormAddLoaiHangMoi()
         {
-            InitializeComponent();
+            InitializeComponent();    
         }
 
         private void buttonThemMoiLoaiHang_Click(object sender, EventArgs e)

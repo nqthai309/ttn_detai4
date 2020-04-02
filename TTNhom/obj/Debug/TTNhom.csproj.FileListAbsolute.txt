@@ -27,7 +27,6 @@ F:\TTN\TTNhom\bin\Debug\TTNhom.exe
 F:\TTN\TTNhom\bin\Debug\TTNhom.pdb
 F:\TTN\TTNhom\obj\Debug\TTNhom.csprojAssemblyReference.cache
 F:\TTN\TTNhom\obj\Debug\TTNhom.FormLogin.resources
-F:\TTN\TTNhom\obj\Debug\TTNhom.FromAddLoaiHang.resources
 F:\TTN\TTNhom\obj\Debug\TTNhom.MainForm.resources
 F:\TTN\TTNhom\obj\Debug\TTNhom.Properties.Resources.resources
 F:\TTN\TTNhom\obj\Debug\TTNhom.csproj.GenerateResource.cache
@@ -77,3 +76,4 @@ C:\Users\ThangBeu\Desktop\Thuc_Tap_ Nhom\ttn_detai4\TTNhom\obj\Debug\TTNhom.Them
 F:\TTN\TTNhom\obj\Debug\TTNhom.csproj.ResolveComReference.cache
 F:\TTN\TTNhom\obj\Debug\TTNhom.ThemNCCForm.resources
 F:\TTN\TTNhom\obj\Debug\TTNhom.ThemQuayForm.resources
+F:\TTN\TTNhom\obj\Debug\TTNhom.FormAddLoaiHangMoi.resources

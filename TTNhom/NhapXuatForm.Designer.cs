@@ -148,6 +148,7 @@
             // 
             // cbTenMatHang
             // 
+            this.cbTenMatHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbTenMatHang.FormattingEnabled = true;
             this.cbTenMatHang.Location = new System.Drawing.Point(111, 172);
@@ -157,6 +158,7 @@
             // 
             // cbNCC
             // 
+            this.cbNCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbNCC.FormattingEnabled = true;
             this.cbNCC.Location = new System.Drawing.Point(111, 34);
@@ -310,6 +312,7 @@
             // 
             // cbTenQuay
             // 
+            this.cbTenQuay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenQuay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbTenQuay.FormattingEnabled = true;
             this.cbTenQuay.Location = new System.Drawing.Point(115, 32);
@@ -328,6 +331,7 @@
             // 
             // cbTenMatHang2
             // 
+            this.cbTenMatHang2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenMatHang2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbTenMatHang2.FormattingEnabled = true;
             this.cbTenMatHang2.Location = new System.Drawing.Point(115, 172);
