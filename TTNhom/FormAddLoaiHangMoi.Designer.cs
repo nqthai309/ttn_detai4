@@ -41,6 +41,7 @@
             this.buttonThemMoiLoaiHang.TabIndex = 8;
             this.buttonThemMoiLoaiHang.Text = "Thêm Mới";
             this.buttonThemMoiLoaiHang.UseVisualStyleBackColor = true;
+            this.buttonThemMoiLoaiHang.Click += new System.EventHandler(this.buttonThemMoiLoaiHang_Click);
             // 
             // textBoxThemLoaiHang
             // 
