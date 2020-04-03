@@ -14,12 +14,13 @@ namespace TTNhom
 {
     public partial class TimKiemForm : Form
     {
-        DBAccess access = new DBAccess();
-        DataTable table;
+        DBAccess dbAccess = new DBAccess();
+        DataTable table = new DataTable();
 
-        private static string strConn = "Data Source=DESKTOP-1NPLUNJ;Initial Catalog=TTCSDL;Integrated Security=True";
+        //private static string strConn = "Data Source=MAYTINH-JCRJIC4;Initial Catalog=TTCSDL;Integrated Security=True";
         private static SqlConnection conn = new SqlConnection(DBAccess.strConn);
         private static SqlDataAdapter adt = new SqlDataAdapter();
+        private static SqlCommand cmd = new SqlCommand();
 
         public bool IsNumber(string pText)
         {
@@ -43,7 +44,7 @@ namespace TTNhom
             {
                 if (conn.State != ConnectionState.Open)
                 {
-                    conn.ConnectionString = strConn;
+                    conn.ConnectionString = DBAccess.strConn;
                     conn.Open();
                 }
             }
@@ -55,7 +56,7 @@ namespace TTNhom
 
         private void GetData(string query, DataGridView grid, DataTable table)
         {
-            access.createConn();
+            dbAccess.createConn();
             adt = new SqlDataAdapter(query, conn);
             adt.Fill(table);
             grid.DataSource = table;
