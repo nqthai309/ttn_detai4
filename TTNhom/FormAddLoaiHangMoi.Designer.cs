@@ -68,6 +68,7 @@
             this.Controls.Add(this.textBoxThemLoaiHang);
             this.Controls.Add(this.label1);
             this.Name = "FormAddLoaiHangMoi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAddLoaiHangMoi";
             this.ResumeLayout(false);
             this.PerformLayout();
