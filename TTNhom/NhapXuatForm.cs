@@ -63,7 +63,7 @@ namespace TTNhom
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             ThemNCCForm f = new ThemNCCForm();
-            f.Show();
+            f.ShowDialog();
         }
         private string queryID(SqlCommand sql, string colomn, string table, string dieuKien, string ndDieuKien)
         {
@@ -82,7 +82,7 @@ namespace TTNhom
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             ThemQuayForm f = new ThemQuayForm();
-            f.Show();
+            f.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
