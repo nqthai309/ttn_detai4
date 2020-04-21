@@ -356,9 +356,9 @@
             // 
             // groupBoxView
             // 
-            this.groupBoxView.Location = new System.Drawing.Point(219, 11);
+            this.groupBoxView.Location = new System.Drawing.Point(219, 12);
             this.groupBoxView.Name = "groupBoxView";
-            this.groupBoxView.Size = new System.Drawing.Size(738, 475);
+            this.groupBoxView.Size = new System.Drawing.Size(738, 474);
             this.groupBoxView.TabIndex = 2;
             this.groupBoxView.TabStop = false;
             this.groupBoxView.Text = "VIEW";

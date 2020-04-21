@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNhanVienForm));
             this.btnSearchQLNV = new System.Windows.Forms.Button();
             this.txtSearchQLNV = new System.Windows.Forms.TextBox();
             this.gridView2 = new System.Windows.Forms.DataGridView();
@@ -55,28 +56,33 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBoxColumn = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearchQLNV
             // 
             this.btnSearchQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSearchQLNV.Location = new System.Drawing.Point(234, 2);
+            this.btnSearchQLNV.Location = new System.Drawing.Point(504, 17);
             this.btnSearchQLNV.Name = "btnSearchQLNV";
             this.btnSearchQLNV.Size = new System.Drawing.Size(132, 30);
             this.btnSearchQLNV.TabIndex = 70;
             this.btnSearchQLNV.Text = "Search";
             this.btnSearchQLNV.UseVisualStyleBackColor = true;
+            this.btnSearchQLNV.Visible = false;
             this.btnSearchQLNV.Click += new System.EventHandler(this.BtnSearchQLNV_Click);
             // 
             // txtSearchQLNV
             // 
             this.txtSearchQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSearchQLNV.Location = new System.Drawing.Point(8, 6);
+            this.txtSearchQLNV.Location = new System.Drawing.Point(12, 21);
             this.txtSearchQLNV.Name = "txtSearchQLNV";
-            this.txtSearchQLNV.Size = new System.Drawing.Size(220, 23);
+            this.txtSearchQLNV.Size = new System.Drawing.Size(300, 23);
             this.txtSearchQLNV.TabIndex = 69;
+            this.txtSearchQLNV.TextChanged += new System.EventHandler(this.TxtSearchQLNV_TextChanged);
             // 
             // gridView2
             // 
@@ -84,7 +90,7 @@
             this.gridView2.AllowUserToDeleteRows = false;
             this.gridView2.AllowUserToResizeRows = false;
             this.gridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridView2.Location = new System.Drawing.Point(8, 35);
+            this.gridView2.Location = new System.Drawing.Point(12, 50);
             this.gridView2.MultiSelect = false;
             this.gridView2.Name = "gridView2";
             this.gridView2.ReadOnly = true;
@@ -119,7 +125,7 @@
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Location = new System.Drawing.Point(8, 211);
+            this.groupBox1.Location = new System.Drawing.Point(12, 226);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(692, 219);
             this.groupBox1.TabIndex = 71;
@@ -130,7 +136,8 @@
             // btnXoaQLNV
             // 
             this.btnXoaQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnXoaQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnXoaQLNV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoaQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXoaQLNV.Location = new System.Drawing.Point(587, 166);
             this.btnXoaQLNV.Name = "btnXoaQLNV";
             this.btnXoaQLNV.Size = new System.Drawing.Size(90, 46);
@@ -142,7 +149,8 @@
             // btnSuaQLNV
             // 
             this.btnSuaQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnSuaQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSuaQLNV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSuaQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnSuaQLNV.Location = new System.Drawing.Point(587, 96);
             this.btnSuaQLNV.Name = "btnSuaQLNV";
             this.btnSuaQLNV.Size = new System.Drawing.Size(90, 46);
@@ -154,7 +162,8 @@
             // btnThemQLNV
             // 
             this.btnThemQLNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnThemQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThemQLNV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThemQLNV.Location = new System.Drawing.Point(587, 31);
             this.btnThemQLNV.Name = "btnThemQLNV";
             this.btnThemQLNV.Size = new System.Drawing.Size(90, 46);
@@ -333,11 +342,41 @@
             this.label14.TabIndex = 94;
             this.label14.Text = "Tên NV";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(318, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 72;
+            this.pictureBox1.TabStop = false;
+            // 
+            // comboBoxColumn
+            // 
+            this.comboBoxColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxColumn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.comboBoxColumn.FormattingEnabled = true;
+            this.comboBoxColumn.Items.AddRange(new object[] {
+            "Mã Nhân Viên",
+            "Tên Nhân Viên",
+            "Tuổi",
+            "Giới Tính",
+            "Thành Phố",
+            "SĐT",
+            "Tài Khoản"});
+            this.comboBoxColumn.Location = new System.Drawing.Point(363, 21);
+            this.comboBoxColumn.Name = "comboBoxColumn";
+            this.comboBoxColumn.Size = new System.Drawing.Size(121, 25);
+            this.comboBoxColumn.TabIndex = 73;
+            // 
             // QuanLyNhanVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 442);
+            this.ClientSize = new System.Drawing.Size(745, 462);
+            this.Controls.Add(this.comboBoxColumn);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSearchQLNV);
             this.Controls.Add(this.txtSearchQLNV);
@@ -345,9 +384,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "QuanLyNhanVienForm";
             this.Text = "QuanLyNhanVienForm";
+            this.Load += new System.EventHandler(this.QuanLyNhanVienForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,5 +422,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBoxColumn;
     }
 }

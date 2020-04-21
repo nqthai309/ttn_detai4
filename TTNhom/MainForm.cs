@@ -115,5 +115,10 @@ namespace TTNhom
             QuanLyNhanVienForm f = new QuanLyNhanVienForm();
             AddForm(f);
         }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

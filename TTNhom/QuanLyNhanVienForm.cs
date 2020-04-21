@@ -35,6 +35,7 @@ namespace TTNhom
         public QuanLyNhanVienForm()
         {
             InitializeComponent();
+            comboBoxColumn.SelectedItem = comboBoxColumn.Items[0];
         }
         private void GetData(string query, DataGridView grid, DataTable table)
         {
@@ -96,20 +97,27 @@ namespace TTNhom
 
         private void GridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = e.RowIndex;
-            DataGridViewRow selectRow = gridView2.Rows[index];
-            txtTenNVQL.Text = selectRow.Cells[1].Value.ToString().Trim();
-            txtTuoiNVQL.Text = selectRow.Cells[2].Value.ToString().Trim();
-            txtGioiTinhNVQL.Text = selectRow.Cells[3].Value.ToString().Trim();
-            txtThanhPhoNVQL.Text = selectRow.Cells[4].Value.ToString().Trim();
-            txtLuongNVQL.Text = selectRow.Cells[5].Value.ToString().Trim();
-            txtSdtNVQL.Text = selectRow.Cells[6].Value.ToString().Trim();
-            txtNvqlNVQL.Text = selectRow.Cells[7].Value.ToString().Trim();
-            txtQuyenHanNVQL.Text = selectRow.Cells[8].Value.ToString().Trim();
-            txtTaiKhoanNVQL.Text = selectRow.Cells[9].Value.ToString().Trim();
-            txtMatKhauNVQL.Text = selectRow.Cells[10].Value.ToString().Trim();
+            try
+            {
+                int index = e.RowIndex;
+                DataGridViewRow selectRow = gridView2.Rows[index];
+                txtTenNVQL.Text = selectRow.Cells[1].Value.ToString().Trim();
+                txtTuoiNVQL.Text = selectRow.Cells[2].Value.ToString().Trim();
+                txtGioiTinhNVQL.Text = selectRow.Cells[3].Value.ToString().Trim();
+                txtThanhPhoNVQL.Text = selectRow.Cells[4].Value.ToString().Trim();
+                txtLuongNVQL.Text = selectRow.Cells[5].Value.ToString().Trim();
+                txtSdtNVQL.Text = selectRow.Cells[6].Value.ToString().Trim();
+                txtNvqlNVQL.Text = selectRow.Cells[7].Value.ToString().Trim();
+                txtQuyenHanNVQL.Text = selectRow.Cells[8].Value.ToString().Trim();
+                txtTaiKhoanNVQL.Text = selectRow.Cells[9].Value.ToString().Trim();
+                txtMatKhauNVQL.Text = selectRow.Cells[10].Value.ToString().Trim();
 
-            manv = selectRow.Cells[0].Value.ToString().Trim();
+                manv = selectRow.Cells[0].Value.ToString().Trim();
+            }
+            catch
+            {
+
+            }
         }
 
         private void BtnThemQLNV_Click(object sender, EventArgs e)
@@ -159,6 +167,63 @@ namespace TTNhom
         private void GroupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void TxtSearchQLNV_TextChanged(object sender, EventArgs e)
+        {
+            table = new DataTable();
+            string key = comboBoxColumn.Text;
+            string keySearch = txtSearchQLNV.Text;
+            switch (key)
+            {
+                case ("Mã Nhân Viên"):
+                    {
+                        GetData("select * from NhanVien where (MaNhanVien like '%" + keySearch + "%') AND NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+                        break;
+                    }
+                case ("Tên Nhân Viên"):
+                    {
+                        GetData("select * from NhanVien where (TenNhanVien like '%" + keySearch + "%') AND NVQL = N'" + FormLogin.ten + "' ", gridView2, table);
+                        break;
+                    }
+                case ("Tuổi"):
+                    {
+                        GetData("select * from NhanVien where (Tuoi like '%" + keySearch + "%') AND NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+                        break;
+                    }
+                case ("Giới Tính"):
+                    {
+                        GetData("select * from NhanVien where (Sex like '%" + keySearch + "%') AND NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+                        break;
+                    }
+                case ("Thành Phố"):
+                    {
+                        GetData("select * from NhanVien where (ThanhPho like '%" + keySearch + "%') AND NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+                        break;
+                    }
+                case ("SĐT"):
+                    {
+                        GetData("select * from NhanVien where (SoDienThoai like '%" + keySearch + "%') AND NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+                        break;
+                    }
+                case ("Tài Khoản"):
+                    {
+                        GetData("select * from NhanVien where (TaiKhoan like '%" + keySearch + "%') AND NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+                        break;
+                    }
+                
+            }
+            if (keySearch == "")
+            {
+                GetData("select * from NhanVien where NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+            }
+            
+        }
+
+        private void QuanLyNhanVienForm_Load(object sender, EventArgs e)
+        {
+            table = new DataTable();
+            GetData("select * from NhanVien where NVQL = N'" + FormLogin.ten + "'", gridView2, table);
         }
     }
 }
