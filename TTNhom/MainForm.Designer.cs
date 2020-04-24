@@ -160,7 +160,7 @@
             this.btnTraHangHoa.Name = "btnTraHangHoa";
             this.btnTraHangHoa.Size = new System.Drawing.Size(139, 39);
             this.btnTraHangHoa.TabIndex = 1;
-            this.btnTraHangHoa.Text = "Nhập/Xuất Hàng Hoá";
+            this.btnTraHangHoa.Text = "Nhập/Trả Hàng Hoá";
             this.btnTraHangHoa.UseVisualStyleBackColor = true;
             this.btnTraHangHoa.Click += new System.EventHandler(this.BtnTraHangHoa_Click);
             // 
@@ -274,50 +274,55 @@
             // txtViTri
             // 
             this.txtViTri.AutoSize = true;
+            this.txtViTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtViTri.ForeColor = System.Drawing.Color.Red;
-            this.txtViTri.Location = new System.Drawing.Point(69, 25);
+            this.txtViTri.Location = new System.Drawing.Point(79, 22);
             this.txtViTri.Name = "txtViTri";
-            this.txtViTri.Size = new System.Drawing.Size(31, 13);
+            this.txtViTri.Size = new System.Drawing.Size(32, 17);
             this.txtViTri.TabIndex = 8;
             this.txtViTri.Text = "......";
             // 
             // txtHoTen
             // 
             this.txtHoTen.AutoSize = true;
+            this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtHoTen.ForeColor = System.Drawing.Color.Green;
-            this.txtHoTen.Location = new System.Drawing.Point(69, 53);
+            this.txtHoTen.Location = new System.Drawing.Point(79, 49);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(31, 13);
+            this.txtHoTen.Size = new System.Drawing.Size(32, 17);
             this.txtHoTen.TabIndex = 8;
             this.txtHoTen.Text = "......";
             // 
             // txtTuoi
             // 
             this.txtTuoi.AutoSize = true;
+            this.txtTuoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTuoi.ForeColor = System.Drawing.Color.Green;
-            this.txtTuoi.Location = new System.Drawing.Point(69, 80);
+            this.txtTuoi.Location = new System.Drawing.Point(79, 76);
             this.txtTuoi.Name = "txtTuoi";
-            this.txtTuoi.Size = new System.Drawing.Size(31, 13);
+            this.txtTuoi.Size = new System.Drawing.Size(32, 17);
             this.txtTuoi.TabIndex = 8;
             this.txtTuoi.Text = "......";
             // 
             // txtSoDienThoai
             // 
             this.txtSoDienThoai.AutoSize = true;
+            this.txtSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtSoDienThoai.ForeColor = System.Drawing.Color.Green;
-            this.txtSoDienThoai.Location = new System.Drawing.Point(69, 106);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(79, 102);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(31, 13);
+            this.txtSoDienThoai.Size = new System.Drawing.Size(32, 17);
             this.txtSoDienThoai.TabIndex = 8;
             this.txtSoDienThoai.Text = "......";
             // 
             // txtNVQL
             // 
             this.txtNVQL.AutoSize = true;
+            this.txtNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtNVQL.ForeColor = System.Drawing.Color.Green;
-            this.txtNVQL.Location = new System.Drawing.Point(69, 134);
+            this.txtNVQL.Location = new System.Drawing.Point(79, 130);
             this.txtNVQL.Name = "txtNVQL";
-            this.txtNVQL.Size = new System.Drawing.Size(31, 13);
+            this.txtNVQL.Size = new System.Drawing.Size(32, 17);
             this.txtNVQL.TabIndex = 8;
             this.txtNVQL.Text = "......";
             // 

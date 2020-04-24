@@ -51,7 +51,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Ten Quay";
+            this.label1.Text = "Tên Quầy";
             // 
             // label2
             // 
@@ -59,9 +59,9 @@
             this.label2.Location = new System.Drawing.Point(12, 78);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "MaNV";
+            this.label2.Text = "Mã Nhân Viên";
             // 
             // btnThemQuay
             // 

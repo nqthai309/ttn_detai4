@@ -132,6 +132,7 @@ namespace TTNhom
                     string queryInsert = "Insert INTO NhanVien VALUES( N'" + ten + "' , " + int.Parse(tuoi) + " ,'" + gioiTinh + "' ,N'" + thanhPho + "' , " + int.Parse(luong) + " , '" + sdt + "' , N'" + nvql + "' ," + int.Parse(quyenHan) + " ,N'" + taiKhoan + "' ,N'" + matKhau + "' )";
                     GetData(queryInsert, gridView2, table);
                     GetData("select * from NhanVien", gridView2, table);
+                    MessageBox.Show("Thêm Thành Công");
                 }
             }
         }
@@ -144,6 +145,7 @@ namespace TTNhom
                 string queryDelete = "delete NhanVien where TaiKhoan = N'" + taiKhoan + "' ";
                 GetData(queryDelete, gridView2, table);
                 GetData("select * from NhanVien", gridView2, table);
+                MessageBox.Show("Xoá Thành Công");
             }
         }
 
@@ -151,16 +153,12 @@ namespace TTNhom
         {
             if (CheckThieuThongTin() == false)
             {
-                table = new DataTable();
-                string query = "select * from NhanVien where TaiKhoan = N'" + taiKhoan + "'";
-                if (CheckTaiKhoan(query, table) == true)
-                {
-                    string queryUpdate = "update NhanVien set TenNhanVien = N'" + ten + "', Tuoi = " + int.Parse(tuoi) + ", Sex = '" + gioiTinh + "'," +
+                string queryUpdate = "update NhanVien set TenNhanVien = N'" + ten + "', Tuoi = " + int.Parse(tuoi) + ", Sex = '" + gioiTinh + "'," +
                         "Thanhpho = N'" + thanhPho + "', Luong = " + int.Parse(luong) + ", SoDienThoai = '" + sdt + "', NVQL = N'" + nvql + "', Role_id = " + int.Parse(quyenHan) + "," +
                         "TaiKhoan = N'" + taiKhoan + "', MatKhau = N'" + matKhau + "' where MaNhanVien = " + int.Parse(manv) + " ";
-                    GetData(queryUpdate, gridView2, table);
-                    GetData("select * from NhanVien", gridView2, table);
-                }
+                GetData(queryUpdate, gridView2, table);
+                GetData("select * from NhanVien", gridView2, table);
+                MessageBox.Show("Sửa Thành Công");
             }
         }
 
@@ -224,6 +222,12 @@ namespace TTNhom
         {
             table = new DataTable();
             GetData("select * from NhanVien where NVQL = N'" + FormLogin.ten + "'", gridView2, table);
+        }
+
+        private void HướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHuongDanQLNV f = new FormHuongDanQLNV();
+            f.Show();
         }
     }
 }

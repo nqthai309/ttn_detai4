@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNhanVienForm));
             this.btnSearchQLNV = new System.Windows.Forms.Button();
             this.txtSearchQLNV = new System.Windows.Forms.TextBox();
@@ -58,15 +59,19 @@
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBoxColumn = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSearchQLNV
             // 
             this.btnSearchQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSearchQLNV.Location = new System.Drawing.Point(504, 17);
+            this.btnSearchQLNV.Location = new System.Drawing.Point(599, 17);
             this.btnSearchQLNV.Name = "btnSearchQLNV";
             this.btnSearchQLNV.Size = new System.Drawing.Size(132, 30);
             this.btnSearchQLNV.TabIndex = 70;
@@ -78,7 +83,7 @@
             // txtSearchQLNV
             // 
             this.txtSearchQLNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSearchQLNV.Location = new System.Drawing.Point(12, 21);
+            this.txtSearchQLNV.Location = new System.Drawing.Point(119, 21);
             this.txtSearchQLNV.Name = "txtSearchQLNV";
             this.txtSearchQLNV.Size = new System.Drawing.Size(300, 23);
             this.txtSearchQLNV.TabIndex = 69;
@@ -102,6 +107,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.btnXoaQLNV);
             this.groupBox1.Controls.Add(this.btnSuaQLNV);
             this.groupBox1.Controls.Add(this.btnThemQLNV);
@@ -345,7 +351,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(318, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(425, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,16 +371,43 @@
             "Thành Phố",
             "SĐT",
             "Tài Khoản"});
-            this.comboBoxColumn.Location = new System.Drawing.Point(363, 21);
+            this.comboBoxColumn.Location = new System.Drawing.Point(470, 21);
             this.comboBoxColumn.Name = "comboBoxColumn";
             this.comboBoxColumn.Size = new System.Drawing.Size(121, 25);
             this.comboBoxColumn.TabIndex = 73;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(20, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.TabIndex = 74;
+            this.label1.Text = "Tìm Kiếm";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hướngDẫnToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(136, 26);
+            // 
+            // hướngDẫnToolStripMenuItem
+            // 
+            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
+            this.hướngDẫnToolStripMenuItem.Click += new System.EventHandler(this.HướngDẫnToolStripMenuItem_Click);
             // 
             // QuanLyNhanVienForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 462);
+            this.ContextMenuStrip = this.contextMenuStrip1;
+            this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBoxColumn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
@@ -389,6 +422,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,5 +458,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
     }
 }

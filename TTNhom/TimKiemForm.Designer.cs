@@ -74,6 +74,7 @@
             // 
             // LoaiHinhcomboBox
             // 
+            this.LoaiHinhcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LoaiHinhcomboBox.FormattingEnabled = true;
             this.LoaiHinhcomboBox.Items.AddRange(new object[] {
             "Mặt Hàng",

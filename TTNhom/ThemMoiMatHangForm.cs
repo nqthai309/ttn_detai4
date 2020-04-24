@@ -101,7 +101,7 @@ namespace TTNhom
         private void pictureBoxThemLoaiHang_Click(object sender, EventArgs e)
         {
             FormAddLoaiHangMoi formAddLoaiHangMoi = new FormAddLoaiHangMoi();
-            formAddLoaiHangMoi.Show();
+            formAddLoaiHangMoi.ShowDialog();
         }
     }
 }
