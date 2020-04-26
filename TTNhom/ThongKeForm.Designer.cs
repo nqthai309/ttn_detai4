@@ -28,16 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabHangHoa = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
             this.labelTongSl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonTK = new System.Windows.Forms.Button();
             this.dataGridViewHH = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.xuấtFileDữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabQuay = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
             this.buttonQ = new System.Windows.Forms.Button();
             this.dataGridViewQuay = new System.Windows.Forms.DataGridView();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.xuấtFileDữLiệuQuầyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabNhapXuat = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
             this.labelTLXuat = new System.Windows.Forms.Label();
             this.labelTLNhap = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,26 +57,22 @@
             this.dataGridViewXuat = new System.Windows.Forms.DataGridView();
             this.buttonLL = new System.Windows.Forms.Button();
             this.dataGridViewNhap = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.xuấtFileDữLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.xuấtFileDữLiệuQuầyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.xuấtFileDữLiệuNhậpXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl2.SuspendLayout();
             this.tabHangHoa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHH)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.tabQuay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuay)).BeginInit();
+            this.menuStrip2.SuspendLayout();
             this.tabNhapXuat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNhap)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            this.menuStrip2.SuspendLayout();
             this.menuStrip3.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -84,6 +88,7 @@
             // 
             // tabHangHoa
             // 
+            this.tabHangHoa.ContextMenuStrip = this.contextMenuStrip1;
             this.tabHangHoa.Controls.Add(this.label6);
             this.tabHangHoa.Controls.Add(this.labelTongSl);
             this.tabHangHoa.Controls.Add(this.label1);
@@ -98,6 +103,16 @@
             this.tabHangHoa.TabIndex = 0;
             this.tabHangHoa.Text = "Hàng Hóa";
             this.tabHangHoa.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(224, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(248, 26);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Bảng Thống Kê Hàng Hóa";
             // 
             // labelTongSl
             // 
@@ -141,6 +156,24 @@
             this.dataGridViewHH.Size = new System.Drawing.Size(456, 197);
             this.dataGridViewHH.TabIndex = 0;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xuấtFileDữLiệuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(3, 3);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(710, 25);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // xuấtFileDữLiệuToolStripMenuItem
+            // 
+            this.xuấtFileDữLiệuToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuấtFileDữLiệuToolStripMenuItem.Name = "xuấtFileDữLiệuToolStripMenuItem";
+            this.xuấtFileDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(171, 21);
+            this.xuấtFileDữLiệuToolStripMenuItem.Text = "Xuất File Dữ liệu Hàng Hóa";
+            this.xuấtFileDữLiệuToolStripMenuItem.Click += new System.EventHandler(this.xuấtFileDữLiệuToolStripMenuItem_Click);
+            // 
             // tabQuay
             // 
             this.tabQuay.Controls.Add(this.label7);
@@ -154,6 +187,16 @@
             this.tabQuay.TabIndex = 2;
             this.tabQuay.Text = "Quầy";
             this.tabQuay.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(239, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(260, 26);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Bảng Thống Kê Quầy Hàng";
             // 
             // buttonQ
             // 
@@ -177,6 +220,24 @@
             this.dataGridViewQuay.Size = new System.Drawing.Size(405, 195);
             this.dataGridViewQuay.TabIndex = 0;
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xuấtFileDữLiệuQuầyToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(3, 3);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(710, 25);
+            this.menuStrip2.TabIndex = 8;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // xuấtFileDữLiệuQuầyToolStripMenuItem
+            // 
+            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Name = "xuấtFileDữLiệuQuầyToolStripMenuItem";
+            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Size = new System.Drawing.Size(150, 21);
+            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Text = "Xuất File Dữ Liệu Quầy";
+            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Click += new System.EventHandler(this.xuấtFileDữLiệuQuầyToolStripMenuItem_Click);
+            // 
             // tabNhapXuat
             // 
             this.tabNhapXuat.Controls.Add(this.label8);
@@ -199,6 +260,16 @@
             this.tabNhapXuat.TabIndex = 1;
             this.tabNhapXuat.Text = "Lưu lượng Nhập Xuất";
             this.tabNhapXuat.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(181, 37);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(371, 26);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Bảng Thống Kê Lưu Lượng Nhập - Xuất";
             // 
             // labelTLXuat
             // 
@@ -311,72 +382,6 @@
             this.dataGridViewNhap.Size = new System.Drawing.Size(340, 197);
             this.dataGridViewNhap.TabIndex = 0;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xuấtFileDữLiệuToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(3, 3);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(710, 25);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // xuấtFileDữLiệuToolStripMenuItem
-            // 
-            this.xuấtFileDữLiệuToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuấtFileDữLiệuToolStripMenuItem.Name = "xuấtFileDữLiệuToolStripMenuItem";
-            this.xuấtFileDữLiệuToolStripMenuItem.Size = new System.Drawing.Size(171, 21);
-            this.xuấtFileDữLiệuToolStripMenuItem.Text = "Xuất File Dữ liệu Hàng Hóa";
-            this.xuấtFileDữLiệuToolStripMenuItem.Click += new System.EventHandler(this.xuấtFileDữLiệuToolStripMenuItem_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(224, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(248, 26);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Bảng Thống Kê Hàng Hóa";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(239, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(260, 26);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Bảng Thống Kê Quầy Hàng";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(181, 37);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(371, 26);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Bảng Thống Kê Lưu Lượng Nhập - Xuất";
-            // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xuấtFileDữLiệuQuầyToolStripMenuItem});
-            this.menuStrip2.Location = new System.Drawing.Point(3, 3);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(710, 25);
-            this.menuStrip2.TabIndex = 8;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
-            // xuấtFileDữLiệuQuầyToolStripMenuItem
-            // 
-            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Name = "xuấtFileDữLiệuQuầyToolStripMenuItem";
-            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Size = new System.Drawing.Size(150, 21);
-            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Text = "Xuất File Dữ Liệu Quầy";
-            this.xuấtFileDữLiệuQuầyToolStripMenuItem.Click += new System.EventHandler(this.xuấtFileDữLiệuQuầyToolStripMenuItem_Click);
-            // 
             // menuStrip3
             // 
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -395,6 +400,20 @@
             this.xuấtFileDữLiệuNhậpXuấtToolStripMenuItem.Text = "Xuất File Dữ Liệu Nhập Xuất";
             this.xuấtFileDữLiệuNhậpXuấtToolStripMenuItem.Click += new System.EventHandler(this.xuấtFileDữLiệuNhậpXuấtToolStripMenuItem_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hướngDẫnToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // hướngDẫnToolStripMenuItem
+            // 
+            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
+            this.hướngDẫnToolStripMenuItem.Click += new System.EventHandler(this.HướngDẫnToolStripMenuItem_Click);
+            // 
             // ThongKeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,19 +428,20 @@
             this.tabHangHoa.ResumeLayout(false);
             this.tabHangHoa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHH)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.tabQuay.ResumeLayout(false);
             this.tabQuay.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuay)).EndInit();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.tabNhapXuat.ResumeLayout(false);
             this.tabNhapXuat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewXuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNhap)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.menuStrip2.ResumeLayout(false);
-            this.menuStrip2.PerformLayout();
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -458,5 +478,7 @@
         private System.Windows.Forms.ToolStripMenuItem xuấtFileDữLiệuQuầyToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip3;
         private System.Windows.Forms.ToolStripMenuItem xuấtFileDữLiệuNhậpXuấtToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
     }
 }

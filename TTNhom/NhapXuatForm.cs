@@ -207,5 +207,11 @@ namespace TTNhom
 
 
         }
+
+        private void HướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHuongDanNhapTra f = new FormHuongDanNhapTra();
+            f.Show();
+        }
     }
 }

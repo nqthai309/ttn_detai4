@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimKiemForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -39,7 +40,10 @@
             this.labelTimeTo = new System.Windows.Forms.Label();
             this.fromDatePicker = new System.Windows.Forms.DateTimePicker();
             this.toDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -150,11 +154,26 @@
             this.toDatePicker.Visible = false;
             this.toDatePicker.ValueChanged += new System.EventHandler(this.toDatePicker_ValueChanged);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hướngDẫnToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // hướngDẫnToolStripMenuItem
+            // 
+            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
+            this.hướngDẫnToolStripMenuItem.Click += new System.EventHandler(this.HướngDẫnToolStripMenuItem_Click);
+            // 
             // TimKiemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 454);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.toDatePicker);
             this.Controls.Add(this.fromDatePicker);
             this.Controls.Add(this.labelTimeTo);
@@ -170,6 +189,7 @@
             this.Text = "TimKiemForm";
             this.Load += new System.EventHandler(this.TimKiemForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,5 +207,7 @@
         private System.Windows.Forms.Label labelTimeTo;
         private System.Windows.Forms.DateTimePicker fromDatePicker;
         private System.Windows.Forms.DateTimePicker toDatePicker;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
     }
 }

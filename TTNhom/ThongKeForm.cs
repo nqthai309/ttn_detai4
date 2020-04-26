@@ -97,6 +97,12 @@ namespace TTNhom
             xuatExcel(dataGridViewXuat, @"D:\", "thongKeLuuLuongXuat");
         }
 
+        private void HướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHuongDanThongKe f = new FormHuongDanThongKe();
+            f.Show();
+        }
+
         private void buttonLL_Click(object sender, EventArgs e)
         {
             table = new DataTable();

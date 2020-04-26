@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemMoiMatHangForm));
             this.comboBoxTenQuay = new System.Windows.Forms.ComboBox();
             this.comboBoxTenLoaiHang = new System.Windows.Forms.ComboBox();
@@ -38,7 +39,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThemLoaiHang)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBoxTenQuay
@@ -135,11 +139,26 @@
             this.label6.TabIndex = 17;
             this.label6.Text = "Tên Mặt Hàng";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hướngDẫnToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // hướngDẫnToolStripMenuItem
+            // 
+            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
+            this.hướngDẫnToolStripMenuItem.Click += new System.EventHandler(this.HướngDẫnToolStripMenuItem_Click);
+            // 
             // ThemMoiMatHangForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 409);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.comboBoxTenQuay);
             this.Controls.Add(this.comboBoxTenLoaiHang);
             this.Controls.Add(this.pictureBoxThemLoaiHang);
@@ -153,6 +172,7 @@
             this.Name = "ThemMoiMatHangForm";
             this.Text = "ThemMoiMatHangForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThemLoaiHang)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +189,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
     }
 }

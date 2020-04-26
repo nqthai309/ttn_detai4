@@ -180,72 +180,82 @@
             // 
             // txtMatKhauNVQL
             // 
-            this.txtMatKhauNVQL.Location = new System.Drawing.Point(386, 189);
+            this.txtMatKhauNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtMatKhauNVQL.Location = new System.Drawing.Point(386, 186);
             this.txtMatKhauNVQL.Name = "txtMatKhauNVQL";
-            this.txtMatKhauNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtMatKhauNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtMatKhauNVQL.TabIndex = 112;
             // 
             // txtTaiKhoanNVQL
             // 
-            this.txtTaiKhoanNVQL.Location = new System.Drawing.Point(386, 146);
+            this.txtTaiKhoanNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTaiKhoanNVQL.Location = new System.Drawing.Point(386, 143);
             this.txtTaiKhoanNVQL.Name = "txtTaiKhoanNVQL";
-            this.txtTaiKhoanNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtTaiKhoanNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtTaiKhoanNVQL.TabIndex = 111;
             // 
             // txtQuyenHanNVQL
             // 
-            this.txtQuyenHanNVQL.Location = new System.Drawing.Point(386, 105);
+            this.txtQuyenHanNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtQuyenHanNVQL.Location = new System.Drawing.Point(386, 102);
             this.txtQuyenHanNVQL.Name = "txtQuyenHanNVQL";
-            this.txtQuyenHanNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtQuyenHanNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtQuyenHanNVQL.TabIndex = 110;
             // 
             // txtNvqlNVQL
             // 
-            this.txtNvqlNVQL.Location = new System.Drawing.Point(386, 66);
+            this.txtNvqlNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtNvqlNVQL.Location = new System.Drawing.Point(386, 63);
             this.txtNvqlNVQL.Name = "txtNvqlNVQL";
-            this.txtNvqlNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtNvqlNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtNvqlNVQL.TabIndex = 109;
             // 
             // txtSdtNVQL
             // 
-            this.txtSdtNVQL.Location = new System.Drawing.Point(386, 31);
+            this.txtSdtNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtSdtNVQL.Location = new System.Drawing.Point(386, 28);
             this.txtSdtNVQL.Name = "txtSdtNVQL";
-            this.txtSdtNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtSdtNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtSdtNVQL.TabIndex = 108;
             // 
             // txtLuongNVQL
             // 
-            this.txtLuongNVQL.Location = new System.Drawing.Point(107, 189);
+            this.txtLuongNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtLuongNVQL.Location = new System.Drawing.Point(107, 186);
             this.txtLuongNVQL.Name = "txtLuongNVQL";
-            this.txtLuongNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtLuongNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtLuongNVQL.TabIndex = 107;
             // 
             // txtThanhPhoNVQL
             // 
-            this.txtThanhPhoNVQL.Location = new System.Drawing.Point(107, 146);
+            this.txtThanhPhoNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtThanhPhoNVQL.Location = new System.Drawing.Point(107, 143);
             this.txtThanhPhoNVQL.Name = "txtThanhPhoNVQL";
-            this.txtThanhPhoNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtThanhPhoNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtThanhPhoNVQL.TabIndex = 106;
             // 
             // txtGioiTinhNVQL
             // 
-            this.txtGioiTinhNVQL.Location = new System.Drawing.Point(107, 105);
+            this.txtGioiTinhNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGioiTinhNVQL.Location = new System.Drawing.Point(107, 102);
             this.txtGioiTinhNVQL.Name = "txtGioiTinhNVQL";
-            this.txtGioiTinhNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtGioiTinhNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtGioiTinhNVQL.TabIndex = 105;
             // 
             // txtTuoiNVQL
             // 
-            this.txtTuoiNVQL.Location = new System.Drawing.Point(107, 66);
+            this.txtTuoiNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTuoiNVQL.Location = new System.Drawing.Point(107, 63);
             this.txtTuoiNVQL.Name = "txtTuoiNVQL";
-            this.txtTuoiNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtTuoiNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtTuoiNVQL.TabIndex = 113;
             // 
             // txtTenNVQL
             // 
-            this.txtTenNVQL.Location = new System.Drawing.Point(107, 31);
+            this.txtTenNVQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenNVQL.Location = new System.Drawing.Point(107, 28);
             this.txtTenNVQL.Name = "txtTenNVQL";
-            this.txtTenNVQL.Size = new System.Drawing.Size(159, 20);
+            this.txtTenNVQL.Size = new System.Drawing.Size(159, 23);
             this.txtTenNVQL.TabIndex = 104;
             // 
             // label23
@@ -396,7 +406,7 @@
             // hướngDẫnToolStripMenuItem
             // 
             this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.hướngDẫnToolStripMenuItem.Text = "Hướng Dẫn";
             this.hướngDẫnToolStripMenuItem.Click += new System.EventHandler(this.HướngDẫnToolStripMenuItem_Click);
             // 

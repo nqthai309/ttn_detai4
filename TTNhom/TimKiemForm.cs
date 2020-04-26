@@ -393,5 +393,11 @@ namespace TTNhom
         {
             toDatePicker.CustomFormat = "yyyy-MM-dd";
         }
+
+        private void HướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHuongDanTimKiem f = new FormHuongDanTimKiem();
+            f.Show();
+        }
     }
 }

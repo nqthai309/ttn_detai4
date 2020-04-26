@@ -103,5 +103,11 @@ namespace TTNhom
             FormAddLoaiHangMoi formAddLoaiHangMoi = new FormAddLoaiHangMoi();
             formAddLoaiHangMoi.ShowDialog();
         }
+
+        private void HướngDẫnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormHuongDanThemMatHang f = new FormHuongDanThemMatHang();
+            f.Show();
+        }
     }
 }
