@@ -129,6 +129,7 @@ namespace TTNhom
                 if (CheckTaiKhoan(query, table) == true)
                 {
                     conn.Open();
+                    matKhau = FormLogin.MaHoa(txtMatKhauNVQL.Text.Trim().ToLower());
                     string queryInsert = "Insert INTO NhanVien VALUES( N'" + ten + "' , " + int.Parse(tuoi) + " ,'" + gioiTinh + "' ,N'" + thanhPho + "' , " + int.Parse(luong) + " , '" + sdt + "' , N'" + nvql + "' ," + int.Parse(quyenHan) + " ,N'" + taiKhoan + "' ,N'" + matKhau + "' )";
                     GetData(queryInsert, gridView2, table);
                     GetData("select * from NhanVien", gridView2, table);
@@ -153,6 +154,7 @@ namespace TTNhom
         {
             if (CheckThieuThongTin() == false)
             {
+                matKhau = FormLogin.MaHoa(txtMatKhauNVQL.Text.Trim().ToLower());
                 string queryUpdate = "update NhanVien set TenNhanVien = N'" + ten + "', Tuoi = " + int.Parse(tuoi) + ", Sex = '" + gioiTinh + "'," +
                         "Thanhpho = N'" + thanhPho + "', Luong = " + int.Parse(luong) + ", SoDienThoai = '" + sdt + "', NVQL = N'" + nvql + "', Role_id = " + int.Parse(quyenHan) + "," +
                         "TaiKhoan = N'" + taiKhoan + "', MatKhau = N'" + matKhau + "' where MaNhanVien = " + int.Parse(manv) + " ";
